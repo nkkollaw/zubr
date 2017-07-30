@@ -1,4 +1,6 @@
-# php
+# \PHP
+## Namespaced PHP functions to fix inconsistencies in the PHP language (naming, parameter order, no passing by reference).
+
 Sane.
 
 From:
