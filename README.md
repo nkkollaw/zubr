@@ -38,11 +38,13 @@ Always use `to`
 
 ## Order of arguments
 
-### needle/haystack
+### Needle/haystack
 
 See: http://phpsadness.com/sad/9 and similar.
 
 Always `$needle, $haystack`: "see if `$needle` is found in `$haystack`" / "find a `$needle` in a `$haystack` vs. "see if in `$haystack` there is `$needle`".
+
+Functions like `method_exists($object, $method_name)` work the same: `\PHP\method_exists($method_name, $object)`, "See if `$method_name` is found in `$object`".
 
 ### Callback
 
