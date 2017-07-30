@@ -18,26 +18,26 @@ function get_defined_functions($exclude_disabled = false) {
 }
 
 function method_exists($object, $method_name) {
-    return method_exists($object, $method_name);
+    return method_exists($method_name, $object);
 }
 
 function parse_url($url, $component=-1) {
     return parse_url($url, $component);
 }
 
-function str_i_str($haystack, $needle, $before_needle = false) {
+function str_i_str($needle, $haystack, $before_needle = false) {
     return stristr($haystack, $needle, $before_needle);
 }
 
-function str_str($haystack, $needle, $before_needle = false) {
+function str_str($needle, $haystack, $before_needle = false) {
     return strstr($haystack, $needle, $before_needle);
 }
 
-function str_i_pos($haystack, $needle, $offset = 0) {
+function str_i_pos($needle, $haystack, $offset = 0) {
     return strpos($haystack, $needle, $offset);
 }
 
-function str_pos($haystack, $needle, $offset = 0) {
+function str_pos($needle, $haystack, $offset = 0) {
     return strpos($haystack, $needle, $offset);
 }
 
