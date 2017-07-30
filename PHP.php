@@ -17,8 +17,8 @@ function get_defined_functions($exclude_disabled = false) {
     return get_defined_functions($exclude_disabled);
 }
 
-function method_exists($object, $method_name) {
-    return method_exists($method_name, $object);
+function method_exists($method_name, $object) {
+    return method_exists($object, $method_name);
 }
 
 function parse_url($url, $component=-1) {
