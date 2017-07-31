@@ -44,7 +44,7 @@ function str_str($needle, $haystack, $before_needle = false) {
 }
 
 function str_i_pos($needle, $haystack, $offset = 0) {
-    return strpos($haystack, $needle, $offset);
+    return stripos($haystack, $needle, $offset);
 }
 
 function str_pos($needle, $haystack, $offset = 0) {
