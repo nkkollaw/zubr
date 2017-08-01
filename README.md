@@ -16,35 +16,37 @@ to:
     mixed \PHP\parse_url(string $url[, int $component = -1])
     string \PHP\url_encode(string $str)
     
-## Function naming
+# Guidelines
+    
+## 1. Function naming
 
-### Underscores
+### 1.1 Underscores
 
 See: http://phpsadness.com/sad/4
 
 Always use snake_case.
 
-### Prefixes
+### 1.2 Prefixes
 
 See: http://phpsadness.com/sad/15
 
 Always use `micro` instead of `u`.
 
-### `to` vs. `2`
+### 1.3 `to` vs. `2`
 
 See: http://phpsadness.com/sad/48
 
 Always use `to`
 
-## Order of arguments
+## 2. Order of arguments
 
-### Needle/haystack
+### 2.1 Needle/haystack
 
 See: http://phpsadness.com/sad/9 and similar.
 
 Always 'subject', then 'keyword' (for example you'd say "search Google (`%SUBJECT%`) for `%KEYWORD%`"). That is, `$haystack` first, then `$needle`. Most PHP functions already follow this convention.
 
-### Callback
+### 2.2 Callback
 
 See: http://phpsadness.com/sad/6
 
