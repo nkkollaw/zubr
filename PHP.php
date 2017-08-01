@@ -4,7 +4,7 @@ namespace PHP;
 /**
  * From http://php.net/manual/en/function.htmlentities.php: "html_entity_decode() is the opposite of htmlentities() in that it converts all HTML entities in the string to their applicable characters.".
  * Let's create a html_entity_encode alias to make the thing intuitive
- * 
+ *
  * @alias htmlentities()
  */
 function html_entity_encode($string, $flags=ENT_COMPAT | ENT_HTML401, $encoding=ini_get("default_charset"), $double_encode=true) {
@@ -27,7 +27,7 @@ function get_defined_functions($exclude_disabled = false) {
     return get_defined_functions($exclude_disabled);
 }
 
-function method_exists($method_name, $object) {
+function method_exists($object, $method_name) {
     return method_exists($object, $method_name);
 }
 
@@ -35,19 +35,19 @@ function parse_url($url, $component=-1) {
     return parse_url($url, $component);
 }
 
-function str_i_str($needle, $haystack, $before_needle = false) {
+function str_i_str($haystack, $needle, $before_needle = false) {
     return stristr($haystack, $needle, $before_needle);
 }
 
-function str_str($needle, $haystack, $before_needle = false) {
+function str_str($haystack, $needle, $before_needle = false) {
     return strstr($haystack, $needle, $before_needle);
 }
 
-function str_i_pos($needle, $haystack, $offset = 0) {
+function str_i_pos($haystack, $needle, $offset = 0) {
     return stripos($haystack, $needle, $offset);
 }
 
-function str_pos($needle, $haystack, $offset = 0) {
+function str_pos($haystack, $needle, $offset = 0) {
     return strpos($haystack, $needle, $offset);
 }
 
