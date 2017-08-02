@@ -46,11 +46,17 @@ See: http://phpsadness.com/sad/9 and similar.
 
 Always 'subject', then 'keyword' (for example you'd say "search Google (`%SUBJECT%`) for `%KEYWORD%`"). That is, `$haystack` first, then `$needle`. Most PHP functions already follow this convention.
 
-### 2.2 Callback
+### 2.2 Callbacks
 
 See: http://phpsadness.com/sad/6
 
 Always do callback last.
+
+## 3. Argument type
+
+> Note: If the parameters given to a function are not what it expects, such as passing an array where a string is expected, the return value of the function is undefined. In this case it will likely return NULL but this is just a convention, and cannot be relied upon. http://php.net/manual/en/functions.internal.php
+
+Fix the above.
 
 ## Contribute
 
