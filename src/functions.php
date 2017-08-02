@@ -1,3 +1,3 @@
 <?php
 
-require_once __DIR__.'/PHP.php';
+require_once __DIR__.'/html_entities.php';

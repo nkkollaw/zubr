@@ -1,16 +1,6 @@
 <?php
 namespace PHP;
 
-/**
- * From http://php.net/manual/en/function.htmlentities.php: "html_entity_decode() is the opposite of htmlentities() in that it converts all HTML entities in the string to their applicable characters.".
- * Let's create a html_entity_encode alias to make the thing intuitive
- *
- * @alias htmlentities()
- */
-function html_entity_encode($string, $flags=ENT_COMPAT | ENT_HTML401, $encoding=ini_get("default_charset"), $double_encode=true) {
-    return htmlentities($string, $flags, $encoding, $double_encode);
-}
-
 function class_exists($class_name, $autoload = false) {
     return class_exists($class_name, $autoload);
 }
