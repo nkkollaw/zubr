@@ -17,6 +17,10 @@ to:
     string \PHP\url_encode(string $str)
     
 # Guidelines
+
+## 0. Introduction
+
+PHP >= 7.0
     
 ## 1. Function naming
 
