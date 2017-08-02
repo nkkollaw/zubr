@@ -1,0 +1,32 @@
+{
+    "name": "nkkollaw/php",
+    "description": "Medicine for phpsadness",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niccolò Brogi",
+            "email": "me@nbrogi.com"
+        },
+        {
+            "name": "Radosław Mejer",
+            "email": "radmen@radmen.info"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "./src/functions.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "phpcs": "./vendor/bin/phpcs --standard=PSR2 src"
+    }
+}
