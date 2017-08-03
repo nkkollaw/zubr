@@ -7,7 +7,7 @@ class ArrayChunkTest extends \PHPUnit\Framework\TestCase
      */
     public function testWrapper($input, $size, $preserve_keys = false)
     {
-        $actual = \PHP\array_chunk($input, $size, $preserve_keys);
+        $actual = \Zubr\array_chunk($input, $size, $preserve_keys);
         $expected = array_chunk($input, $size, $preserve_keys);
 
         $this->assertEquals($expected, $actual);

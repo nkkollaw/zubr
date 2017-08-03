@@ -8,7 +8,7 @@ class ParseUrlTest extends \PHPUnit\Framework\TestCase
     public function testWrapper($url, $component = null)
     {
         $arguments = array_filter([$url, $component]);
-        $actual = \PHP\parse_url(...$arguments);
+        $actual = \Zubr\parse_url(...$arguments);
         $expected = \parse_url(...$arguments);
 
         $this->assertEquals($expected, $actual);

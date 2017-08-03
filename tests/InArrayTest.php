@@ -7,7 +7,7 @@ class InArrayTest extends \PHPUnit\Framework\TestCase
      */
     public function testWrapper($needle, $haystack, $strict = null)
     {
-        $actual = PHP\in_array(...array_filter([$haystack, $needle, $strict]));
+        $actual = Zubr\in_array(...array_filter([$haystack, $needle, $strict]));
         $expected = \in_array(...array_filter([$needle, $haystack, $strict]));
 
         $this->assertEquals($expected, $actual);

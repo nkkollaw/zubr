@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PHP;
+namespace Zubr;
 
 /**
  * Changes all keys in an array

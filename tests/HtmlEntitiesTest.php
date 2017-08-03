@@ -1,6 +1,6 @@
 <?php
 
-use function PHP\html_entities;
+use function Zubr\html_entities;
 
 class HtmlEntitiesTest extends \PHPUnit\Framework\TestCase
 {

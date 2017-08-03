@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PHP;
+namespace Zubr;
 
 /**
  * Checks if the class has been defined
