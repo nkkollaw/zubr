@@ -1,7 +1,7 @@
 # \PHP
 ## Fix inconsistencies in the PHP language (naming, parameter order, passing by reference and more).
 
-PHP is great with Composer and PSR, but legacy stuff in the language itself makes it harder to use than it should be (see http://phpsadness.com/).
+PHP is great. Composer, PHP-FIG, and all the different frameworks make it even greater, but legacy stuff in the language itself makes it harder to use than it should be (see http://phpsadness.com/).
 
 Let's namespace PHP functions and bring some sanity.
 
