@@ -88,7 +88,7 @@ Version 1.0 will contain all of PHP's [core built-in functions](http://php.net/m
 
 We might then go on to implement a private plugin system to add [bundled extensions](http://php.net/manual/en/extensions.membership.php#extensions.membership.bundled) in 2.0, and make the plugin system public so that anyone can implement wrappers to [external extensions](http://php.net/manual/en/extensions.membership.php#extensions.membership.external) in version 3.0.
 
-We have detailed milestones with all features that will be implemented up to version 1.0 at https://github.com/nkkollaw/php/milestones.
+We have detailed milestones with all features that will be implemented up to version 1.0 at https://github.com/nkkollaw/zubr/milestones.
 
 # Contribute
 
