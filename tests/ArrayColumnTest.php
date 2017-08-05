@@ -7,7 +7,7 @@ class ArrayColumnTest extends \PHPUnit\Framework\TestCase
      */
     public function testWrapper($array, $column, $index_key = null)
     {
-        $expected = \Zubr\array_column($array, $column, $index_key);
+        $expected = array_column($array, $column, $index_key);
         $actual = Zubr\array_column($array, $column, $index_key);
 
         $this->assertEquals($expected, $actual);
