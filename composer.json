@@ -27,6 +27,7 @@
     },
     "scripts": {
         "phpunit": "./vendor/bin/phpunit",
-        "phpcs": "./vendor/bin/phpcs --standard=PSR2 src"
+        "phpcs": "./vendor/bin/phpcs --standard=PSR2 src",
+		"concat": "php ./build.php"
     }
 }
