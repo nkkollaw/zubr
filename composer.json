@@ -1,6 +1,6 @@
 {
-    "name": "nkkollaw/php",
-    "description": "Medicine for phpsadness",
+    "name": "nkkollaw/zubr",
+    "description": "Wrapper library to fix inconsistencies in PHP's core functions",
     "type": "library",
     "license": "MIT",
     "authors": [
