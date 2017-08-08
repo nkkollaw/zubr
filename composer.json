@@ -32,6 +32,6 @@
     "scripts": {
         "phpunit": "./vendor/bin/phpunit",
         "phpcs": "./vendor/bin/phpcs --standard=PSR2 src",
-		"build": "php ./build.php"
+        "build": "php ./build.php"
     }
 }
