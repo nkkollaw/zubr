@@ -11,6 +11,10 @@
         {
             "name": "Radosław Mejer",
             "email": "radmen@radmen.info"
+        },
+        {
+            "name": "Damian Dziaduch",
+            "email": ""
         }
     ],
     "autoload": {
