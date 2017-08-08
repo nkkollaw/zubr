@@ -26,3 +26,4 @@ install:
 script:
   - composer run-script phpunit
   - composer run-script phpcs
+  - composer run-script build
