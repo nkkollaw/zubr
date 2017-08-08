@@ -28,7 +28,7 @@ to:
     \Zubr\html_entity_encode() // alias to htmlentities(), \Zubr\html_entities()
     \Zubr\html_entity_decode()
     
-Functions always have the same name as the build-in ones, but they follow the same set of rules. Zubr is intuitive to use, because function names are predictable and similar to the ones you're used to. 
+Functions always have the same name as the built-in ones, but they follow the same set of rules. Zubr is intuitive to use, because function names are predictable and similar to the ones you're used to. 
 
 Zubr's idea came from commenting this HN post: https://news.ycombinator.com/item?id=14883784
     
@@ -96,7 +96,7 @@ We have detailed milestones with all features that will be implemented up to ver
 
 Pull requests are welcome.
 
-Take a look at the CONTRIBUTE file. 
+Take a look at the CONTRIBUTING.md file. 
     
 ## Contact us
 
