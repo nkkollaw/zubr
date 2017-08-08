@@ -14,6 +14,10 @@ function array_column(array $array, $column, $index_key = null): array
 {
     return \array_column($array, $column, $index_key);
 }
+function array_combine(array $keys, array $values)
+{
+    return \array_combine($keys, $values);
+}
 function class_exists(string $className, bool $autoload = true): bool
 {
     return \class_exists($className, $autoload);
