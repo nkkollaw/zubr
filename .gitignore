@@ -52,3 +52,7 @@ tags
 
 # End of https://www.gitignore.io/api/vim,composer,osx
 .idea
+
+### Project ###
+
+dist
