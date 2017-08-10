@@ -1,4 +1,4 @@
-Pull requests that add functions must however contain no more than a single function, and must include a reference to the related issue. 
+Pull requests that add functions must contain no more than a single function, and must include a reference to the related issue. 
 
 For instance:
 
