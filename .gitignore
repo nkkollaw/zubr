@@ -51,4 +51,12 @@ Session.vim
 tags
 
 # End of https://www.gitignore.io/api/vim,composer,osx
+
+# Misc. editors
 .idea
+/nbproject/private/
+utils/stubs/vendor/
+
+# "Stubs" utility
+utils/stubs/locutus/
+utils/stubs/phpstorm-stubs/

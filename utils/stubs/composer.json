@@ -1,0 +1,13 @@
+{
+    "name": "nkkollaw/stubs-util",
+    "authors": [
+        {
+            "name": "Niccolò Brogi",
+            "email": "me@nbrogi.com"
+        }
+    ],
+    "require": {
+        "symfony/yaml": "^3.3",
+        "ijortengab/parse-html": "^0.0.7"
+    }
+}
