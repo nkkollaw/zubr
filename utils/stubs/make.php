@@ -120,6 +120,8 @@ try {
 
                 echo "\n > $function_name";
 
+                $function_body = str_replace('{ }', '{}', $function_body); // normalize
+
                 $stubs[$function_name] = $function_body;
             }
         } catch (Exception $e) {
@@ -166,7 +168,7 @@ try {
             continue;
         }
         $file_path = $base_file_path . '.TODO';
-        $function_body = str_replace(' { }', "\n{\n    // TODO: implement\n}", $function_body);
+        $function_body = str_replace(' {}', "\n{\n    // TODO: implement\n}", $function_body);
         $file_contents = '';
         $file_contents .= <<<EOF
 <?php
