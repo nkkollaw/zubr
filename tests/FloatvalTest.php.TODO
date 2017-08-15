@@ -1,0 +1,30 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => floatval('150.03_page-section')
+    [returns] => 150.03
+)
+Array
+(
+    [code] => floatval('page: 3')
+floatval('-50 + 8')
+    [returns] => 0
+-50
+)
+*/
+class Floatval extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\floatval(/* put stuff here */);
+        $expected = \floatval(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

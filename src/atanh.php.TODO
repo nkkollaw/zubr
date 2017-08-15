@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\atanh()
+ *
+ * @link https://secure.php.net/atanh
+ *
+ * NOTES: same as \atanh() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function atanh ($arg)
+{
+    // TODO: implement
+}

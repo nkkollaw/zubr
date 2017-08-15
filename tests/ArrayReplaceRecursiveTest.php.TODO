@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => array_replace_recursive({'citrus' : ['orange'], 'berries' : ['blackberry', 'raspberry']}, {'citrus' : ['pineapple'], 'berries' : ['blueberry']})
+    [returns] => {citrus : ['pineapple'], berries : ['blueberry', 'raspberry']}
+)
+*/
+class ArrayReplaceRecursive extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_replace_recursive(/* put stuff here */);
+        $expected = \array_replace_recursive(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

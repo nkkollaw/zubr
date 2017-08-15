@@ -1,0 +1,31 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => array_sum([4, 9, 182.6])
+    [returns] => 195.6
+)
+Array
+(
+    [code] => var $total = []
+var $index = 0.1
+for (var $y = 0; $y < 12; $y++){ $total[$y] = $y + $index }
+array_sum($total)
+    [returns] => 67.2
+)
+*/
+class ArraySum extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_sum(/* put stuff here */);
+        $expected = \array_sum(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

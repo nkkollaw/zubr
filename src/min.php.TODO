@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\min()
+ *
+ * @link https://secure.php.net/min
+ *
+ * NOTES: same as \min() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function min (array $value1, $value2 = null, ...$values)
+{
+    // TODO: implement
+}

@@ -1,0 +1,26 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $data = {5:'a', 2:'3', 3:'c', 4:5, 'q':5}
+ini_set('locutus.sortByReference', true)
+shuffle($data)
+var $result = $data.q
+    [returns] => 5
+)
+*/
+class Shuffle extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\shuffle(/* put stuff here */);
+        $expected = \shuffle(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

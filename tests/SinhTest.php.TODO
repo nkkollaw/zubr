@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => sinh(-0.9834330348825909)
+    [returns] => -1.1497971402636502
+)
+*/
+class Sinh extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\sinh(/* put stuff here */);
+        $expected = \sinh(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

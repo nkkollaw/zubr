@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strpbrk('This is a Simple text.', 'is')
+    [returns] => 'is is a Simple text.'
+)
+*/
+class Strpbrk extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strpbrk(/* put stuff here */);
+        $expected = \strpbrk(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

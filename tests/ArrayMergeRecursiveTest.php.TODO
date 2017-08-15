@@ -1,0 +1,25 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $arr1 = {'color': {'favorite': 'red'}, 0: 5}
+var $arr2 = {0: 10, 'color': {'favorite': 'green', 0: 'blue'}}
+array_merge_recursive($arr1, $arr2)
+    [returns] => {'color': {'favorite': {0: 'red', 1: 'green'}, 0: 'blue'}, 1: 5, 1: 10}
+)
+*/
+class ArrayMergeRecursive extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_merge_recursive(/* put stuff here */);
+        $expected = \array_merge_recursive(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

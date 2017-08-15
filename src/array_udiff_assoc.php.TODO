@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_udiff_assoc()
+ *
+ * @link https://secure.php.net/array_udiff_assoc
+ *
+ * NOTES: same as \array_udiff_assoc() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_udiff_assoc(array $array1, array $array2, array $_ = null, $data_compare_func)
+{
+    // TODO: implement
+}

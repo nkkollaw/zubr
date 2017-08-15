@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\pathinfo()
+ *
+ * @link https://secure.php.net/pathinfo
+ *
+ * NOTES: same as \pathinfo() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function pathinfo ($path, $options = null)
+{
+    // TODO: implement
+}

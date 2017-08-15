@@ -1,0 +1,53 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => gettype(1)
+    [returns] => 'integer'
+)
+Array
+(
+    [code] => gettype(undefined)
+    [returns] => 'undefined'
+)
+Array
+(
+    [code] => gettype({0: 'Kevin van Zonneveld'})
+    [returns] => 'object'
+)
+Array
+(
+    [code] => gettype('foo')
+    [returns] => 'string'
+)
+Array
+(
+    [code] => gettype({0: function () {return false;}})
+    [returns] => 'object'
+)
+Array
+(
+    [code] => gettype({0: 'test', length: 1, splice: function () {}})
+    [returns] => 'object'
+)
+Array
+(
+    [code] => gettype(['test'])
+    [returns] => 'array'
+)
+*/
+class Gettype extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\gettype(/* put stuff here */);
+        $expected = \gettype(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

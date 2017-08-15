@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\file_get_contents()
+ *
+ * @link https://secure.php.net/file_get_contents
+ *
+ * NOTES: same as \file_get_contents() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function file_get_contents ($filename, $use_include_path = false, $context = null, $offset = 0, $maxlen = null)
+{
+    // TODO: implement
+}

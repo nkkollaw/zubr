@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\md5_file()
+ *
+ * @link https://secure.php.net/md5_file
+ *
+ * NOTES: same as \md5_file() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function md5_file ($filename, $raw_output = null)
+{
+    // TODO: implement
+}

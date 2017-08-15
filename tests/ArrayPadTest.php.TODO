@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => array_pad([ 7, 8, 9 ], 2, 'a')
+    [returns] => [ 7, 8, 9]
+)
+Array
+(
+    [code] => array_pad([ 7, 8, 9 ], 5, 'a')
+    [returns] => [ 7, 8, 9, 'a', 'a']
+)
+Array
+(
+    [code] => array_pad([ 7, 8, 9 ], 5, 2)
+    [returns] => [ 7, 8, 9, 2, 2]
+)
+Array
+(
+    [code] => array_pad([ 7, 8, 9 ], -5, 'a')
+    [returns] => [ 'a', 'a', 7, 8, 9 ]
+)
+*/
+class ArrayPad extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_pad(/* put stuff here */);
+        $expected = \array_pad(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

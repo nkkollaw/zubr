@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\prev()
+ *
+ * @link https://secure.php.net/prev
+ *
+ * NOTES: same as \prev() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function prev (array &$array)
+{
+    // TODO: implement
+}

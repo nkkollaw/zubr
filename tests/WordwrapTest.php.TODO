@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => wordwrap('Kevin van Zonneveld', 6, '|', true)
+    [returns] => 'Kevin |van |Zonnev|eld'
+)
+Array
+(
+    [code] => wordwrap('The quick brown fox jumped over the lazy dog.', 20, '<br />\n')
+    [returns] => 'The quick brown fox <br />\njumped over the lazy<br />\n dog.'
+)
+Array
+(
+    [code] => wordwrap('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+    [returns] => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod \ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim \nveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea \ncommodo consequat.'
+)
+*/
+class Wordwrap extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\wordwrap(/* put stuff here */);
+        $expected = \wordwrap(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,44 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => is_array(['Kevin', 'van', 'Zonneveld'])
+    [returns] => true
+)
+Array
+(
+    [code] => is_array('Kevin van Zonneveld')
+    [returns] => false
+)
+Array
+(
+    [code] => is_array({0: 'Kevin', 1: 'van', 2: 'Zonneveld'})
+    [returns] => true
+)
+Array
+(
+    [code] => ini_set('locutus.objectsAsArrays', 0)
+is_array({0: 'Kevin', 1: 'van', 2: 'Zonneveld'})
+    [returns] => false
+)
+Array
+(
+    [code] => is_array(function tmp_a (){ this.name = 'Kevin' })
+    [returns] => false
+)
+*/
+class IsArray extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\is_array(/* put stuff here */);
+        $expected = \is_array(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => base64_decode('S2V2aW4gdmFuIFpvbm5ldmVsZA==')
+    [returns] => 'Kevin van Zonneveld'
+)
+Array
+(
+    [code] => base64_decode('YQ==')
+    [returns] => 'a'
+)
+Array
+(
+    [code] => base64_decode('4pyTIMOgIGxhIG1vZGU=')
+    [returns] => '✓ à la mode'
+)
+*/
+class Base64Decode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\base64_decode(/* put stuff here */);
+        $expected = \base64_decode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

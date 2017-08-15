@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\deg2rad()
+ *
+ * @link https://secure.php.net/deg2rad
+ *
+ * NOTES: same as \deg2rad() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function deg2rad ($number)
+{
+    // TODO: implement
+}

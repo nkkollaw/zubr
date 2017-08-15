@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => metaphone('Gnu')
+    [returns] => 'N'
+)
+Array
+(
+    [code] => metaphone('bigger')
+    [returns] => 'BKR'
+)
+Array
+(
+    [code] => metaphone('accuracy')
+    [returns] => 'AKKRS'
+)
+Array
+(
+    [code] => metaphone('batch batcher')
+    [returns] => 'BXBXR'
+)
+*/
+class Metaphone extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\metaphone(/* put stuff here */);
+        $expected = \metaphone(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strval({red: 1, green: 2, blue: 3, white: 4})
+    [returns] => 'Object'
+)
+*/
+class Strval extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strval(/* put stuff here */);
+        $expected = \strval(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

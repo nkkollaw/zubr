@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\crc32()
+ *
+ * @link https://secure.php.net/crc32
+ *
+ * NOTES: same as \crc32() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function crc32 ($str)
+{
+    // TODO: implement
+}

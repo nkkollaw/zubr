@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strptime()
+ *
+ * @link https://secure.php.net/strptime
+ *
+ * NOTES: same as \strptime() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strptime ($date, $format)
+{
+    // TODO: implement
+}

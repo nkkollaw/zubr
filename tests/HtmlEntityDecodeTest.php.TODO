@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => html_entity_decode('Kevin &amp; van Zonneveld')
+    [returns] => 'Kevin & van Zonneveld'
+)
+Array
+(
+    [code] => html_entity_decode('&amp;lt;')
+    [returns] => '&lt;'
+)
+*/
+class HtmlEntityDecode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\html_entity_decode(/* put stuff here */);
+        $expected = \html_entity_decode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

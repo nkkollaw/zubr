@@ -1,0 +1,25 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => chr(75) === 'K'
+chr(65536) === '\uD800\uDC00'
+    [returns] => true
+true
+)
+*/
+class Chr extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\chr(/* put stuff here */);
+        $expected = \chr(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

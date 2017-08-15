@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_values()
+ *
+ * @link https://secure.php.net/array_values
+ *
+ * NOTES: same as \array_values() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_values(array $input)
+{
+    // TODO: implement
+}

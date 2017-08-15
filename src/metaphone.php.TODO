@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\metaphone()
+ *
+ * @link https://secure.php.net/metaphone
+ *
+ * NOTES: same as \metaphone() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function metaphone ($str, $phonemes = 0)
+{
+    // TODO: implement
+}

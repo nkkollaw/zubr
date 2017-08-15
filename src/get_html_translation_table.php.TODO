@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\get_html_translation_table()
+ *
+ * @link https://secure.php.net/get_html_translation_table
+ *
+ * NOTES: same as \get_html_translation_table() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function get_html_translation_table ($table = null, $quote_style = null)
+{
+    // TODO: implement
+}

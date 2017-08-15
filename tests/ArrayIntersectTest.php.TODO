@@ -1,0 +1,26 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $array1 = {'a' : 'green', 0:'red', 1: 'blue'}
+var $array2 = {'b' : 'green', 0:'yellow', 1:'red'}
+var $array3 = ['green', 'red']
+var $result = array_intersect($array1, $array2, $array3)
+    [returns] => {0: 'red', a: 'green'}
+)
+*/
+class ArrayIntersect extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_intersect(/* put stuff here */);
+        $expected = \array_intersect(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

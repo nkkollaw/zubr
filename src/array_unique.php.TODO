@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_unique()
+ *
+ * @link https://secure.php.net/array_unique
+ *
+ * NOTES: same as \array_unique() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_unique(array $array, $sort_flags = null)
+{
+    // TODO: implement
+}

@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\str_word_count()
+ *
+ * @link https://secure.php.net/str_word_count
+ *
+ * NOTES: same as \str_word_count() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function str_word_count ($string, $format = null, $charlist = null)
+{
+    // TODO: implement
+}

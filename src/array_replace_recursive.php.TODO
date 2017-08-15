@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_replace_recursive()
+ *
+ * @link https://secure.php.net/array_replace_recursive
+ *
+ * NOTES: same as \array_replace_recursive() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_replace_recursive(array $array, array $array1, array $array2 = null, array $_ = null)
+{
+    // TODO: implement
+}

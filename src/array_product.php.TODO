@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_product()
+ *
+ * @link https://secure.php.net/array_product
+ *
+ * NOTES: same as \array_product() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_product(array $array)
+{
+    // TODO: implement
+}

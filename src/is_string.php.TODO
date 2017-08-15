@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\is_string()
+ *
+ * @link https://secure.php.net/is_string
+ *
+ * NOTES: same as \is_string() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function is_string ($var)
+{
+    // TODO: implement
+}

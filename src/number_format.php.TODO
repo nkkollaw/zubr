@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\number_format()
+ *
+ * @link https://secure.php.net/number_format
+ *
+ * NOTES: same as \number_format() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function number_format ($number , $decimals = 0 , $dec_point = '.' , $thousands_sep = ',' )
+{
+    // TODO: implement
+}

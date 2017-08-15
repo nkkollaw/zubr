@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\base64_decode()
+ *
+ * @link https://secure.php.net/base64_decode
+ *
+ * NOTES: same as \base64_decode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function base64_decode ($data, $strict = null)
+{
+    // TODO: implement
+}

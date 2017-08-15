@@ -1,0 +1,39 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $arr = {}
+parse_str('first=foo&second=bar', $arr)
+var $result = $arr
+    [returns] => { first: 'foo', second: 'bar' }
+)
+Array
+(
+    [code] => var $arr = {}
+parse_str('str_a=Jack+and+Jill+didn%27t+see+the+well.', $arr)
+var $result = $arr
+    [returns] => { str_a: "Jack and Jill didn't see the well." }
+)
+Array
+(
+    [code] => var $abc = {3:'a'}
+parse_str('a[b]["c"]=def&a[q]=t+5', $abc)
+var $result = $abc
+    [returns] => {"3":"a","a":{"b":{"c":"def"},"q":"t 5"}}
+)
+*/
+class ParseStr extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\parse_str(/* put stuff here */);
+        $expected = \parse_str(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

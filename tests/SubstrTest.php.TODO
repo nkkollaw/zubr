@@ -1,0 +1,58 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => substr('abcdef', 0, -1)
+    [returns] => 'abcde'
+)
+Array
+(
+    [code] => substr(2, 0, -6)
+    [returns] => false
+)
+Array
+(
+    [code] => ini_set('unicode.semantics', 'on')
+substr('a\uD801\uDC00', 0, -1)
+    [returns] => 'a'
+)
+Array
+(
+    [code] => ini_set('unicode.semantics', 'on')
+substr('a\uD801\uDC00', 0, 2)
+    [returns] => 'a\uD801\uDC00'
+)
+Array
+(
+    [code] => ini_set('unicode.semantics', 'on')
+substr('a\uD801\uDC00', -1, 1)
+    [returns] => '\uD801\uDC00'
+)
+Array
+(
+    [code] => ini_set('unicode.semantics', 'on')
+substr('a\uD801\uDC00z\uD801\uDC00', -3, 2)
+    [returns] => '\uD801\uDC00z'
+)
+Array
+(
+    [code] => ini_set('unicode.semantics', 'on')
+substr('a\uD801\uDC00z\uD801\uDC00', -3, -1)
+    [returns] => '\uD801\uDC00z'
+)
+*/
+class Substr extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\substr(/* put stuff here */);
+        $expected = \substr(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

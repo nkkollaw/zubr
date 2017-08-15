@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => htmlspecialchars_decode("<p>this -&gt; &quot;</p>", 'ENT_NOQUOTES')
+    [returns] => '<p>this -> &quot;</p>'
+)
+Array
+(
+    [code] => htmlspecialchars_decode("&amp;quot;")
+    [returns] => '&quot;'
+)
+*/
+class HtmlspecialcharsDecode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\htmlspecialchars_decode(/* put stuff here */);
+        $expected = \htmlspecialchars_decode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

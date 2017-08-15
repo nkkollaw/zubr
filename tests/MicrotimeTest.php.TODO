@@ -1,0 +1,29 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $timeStamp = microtime(true)
+$timeStamp > 1000000000 && $timeStamp < 2000000000
+    [returns] => true
+)
+Array
+(
+    [code] => /^0\.[0-9]{1,6} [0-9]{10,10}$/.test(microtime())
+    [returns] => true
+)
+*/
+class Microtime extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\microtime(/* put stuff here */);
+        $expected = \microtime(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

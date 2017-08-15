@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => rawurldecode('Kevin+van+Zonneveld%21')
+    [returns] => 'Kevin+van+Zonneveld!'
+)
+Array
+(
+    [code] => rawurldecode('http%3A%2F%2Fkvz.io%2F')
+    [returns] => 'http://kvz.io/'
+)
+Array
+(
+    [code] => rawurldecode('http%3A%2F%2Fwww.google.nl%2Fsearch%3Fq%3DLocutus%26ie%3D')
+    [returns] => 'http://www.google.nl/search?q=Locutus&ie='
+)
+*/
+class Rawurldecode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\rawurldecode(/* put stuff here */);
+        $expected = \rawurldecode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

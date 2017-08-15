@@ -1,0 +1,43 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => sprintf("%01.2f", 123.1)
+    [returns] => '123.10'
+)
+Array
+(
+    [code] => sprintf("[%10s]", 'monkey')
+    [returns] => '[    monkey]'
+)
+Array
+(
+    [code] => sprintf("[%'#10s]", 'monkey')
+    [returns] => '[####monkey]'
+)
+Array
+(
+    [code] => sprintf("%d", 123456789012345)
+    [returns] => '123456789012345'
+)
+Array
+(
+    [code] => sprintf('%-03s', 'E')
+    [returns] => 'E00'
+)
+*/
+class Sprintf extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\sprintf(/* put stuff here */);
+        $expected = \sprintf(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,25 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $data = {d: 'lemon', a: 'orange', b: 'banana', c: 'apple'}
+uksort($data, function (key1, key2){ return (key1 === key2 ? 0 : (key1 > key2 ? 1 : -1)); })
+var $result = $data
+    [returns] => {a: 'orange', b: 'banana', c: 'apple', d: 'lemon'}
+)
+*/
+class Uksort extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\uksort(/* put stuff here */);
+        $expected = \uksort(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

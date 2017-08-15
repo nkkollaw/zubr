@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_search()
+ *
+ * @link https://secure.php.net/array_search
+ *
+ * NOTES: same as \array_search() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_search ($needle, array $haystack, $strict = null)
+{
+    // TODO: implement
+}

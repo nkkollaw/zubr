@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\cosh()
+ *
+ * @link https://secure.php.net/cosh
+ *
+ * NOTES: same as \cosh() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function cosh ($arg)
+{
+    // TODO: implement
+}

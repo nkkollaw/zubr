@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strtoupper('Kevin van Zonneveld')
+    [returns] => 'KEVIN VAN ZONNEVELD'
+)
+*/
+class Strtoupper extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strtoupper(/* put stuff here */);
+        $expected = \strtoupper(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_walk()
+ *
+ * @link https://secure.php.net/array_walk
+ *
+ * NOTES: same as \array_walk() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_walk (array &$array, $funcname, $userdata = null)
+{
+    // TODO: implement
+}

@@ -1,0 +1,53 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strip_tags('<p>Kevin</p> <br /><b>van</b> <i>Zonneveld</i>', '<i><b>')
+    [returns] => 'Kevin <b>van</b> <i>Zonneveld</i>'
+)
+Array
+(
+    [code] => strip_tags('<p>Kevin <img src="someimage.png" onmouseover="someFunction()">van <i>Zonneveld</i></p>', '<p>')
+    [returns] => '<p>Kevin van Zonneveld</p>'
+)
+Array
+(
+    [code] => strip_tags("<a href='http://kvz.io'>Kevin van Zonneveld</a>", "<a>")
+    [returns] => "<a href='http://kvz.io'>Kevin van Zonneveld</a>"
+)
+Array
+(
+    [code] => strip_tags('1 < 5 5 > 1')
+    [returns] => '1 < 5 5 > 1'
+)
+Array
+(
+    [code] => strip_tags('1 <br/> 1')
+    [returns] => '1  1'
+)
+Array
+(
+    [code] => strip_tags('1 <br/> 1', '<br>')
+    [returns] => '1 <br/> 1'
+)
+Array
+(
+    [code] => strip_tags('1 <br/> 1', '<br><br/>')
+    [returns] => '1 <br/> 1'
+)
+*/
+class StripTags extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strip_tags(/* put stuff here */);
+        $expected = \strip_tags(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

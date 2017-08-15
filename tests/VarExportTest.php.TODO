@@ -1,0 +1,34 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var_export(null)
+    [returns] => null
+)
+Array
+(
+    [code] => var_export({0: 'Kevin', 1: 'van', 2: 'Zonneveld'}, true)
+    [returns] => "array (\n  0 => 'Kevin',\n  1 => 'van',\n  2 => 'Zonneveld'\n)"
+)
+Array
+(
+    [code] => var data = 'Kevin'
+var_export(data, true)
+    [returns] => "'Kevin'"
+)
+*/
+class VarExport extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\var_export(/* put stuff here */);
+        $expected = \var_export(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

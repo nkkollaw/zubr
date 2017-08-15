@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\substr_replace()
+ *
+ * @link https://secure.php.net/substr_replace
+ *
+ * NOTES: same as \substr_replace() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function substr_replace ($string, $replacement, $start, $length = null)
+{
+    // TODO: implement
+}

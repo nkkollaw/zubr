@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => expm1(1e-15)
+    [returns] => 1.0000000000000007e-15
+)
+*/
+class Expm1 extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\expm1(/* put stuff here */);
+        $expected = \expm1(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

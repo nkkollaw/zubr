@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => Math.ceil(tan(8723321.4) * 10000000)
+    [returns] => 54251849
+)
+*/
+class Tan extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\tan(/* put stuff here */);
+        $expected = \tan(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

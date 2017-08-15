@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => version_compare('8.2.5rc', '8.2.5a')
+    [returns] => 1
+)
+Array
+(
+    [code] => version_compare('8.2.50', '8.2.52', '<')
+    [returns] => true
+)
+Array
+(
+    [code] => version_compare('5.3.0-dev', '5.3.0')
+    [returns] => -1
+)
+Array
+(
+    [code] => version_compare('4.1.0.52','4.01.0.51')
+    [returns] => 1
+)
+*/
+class VersionCompare extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\version_compare(/* put stuff here */);
+        $expected = \version_compare(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

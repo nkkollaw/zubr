@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => str_word_count("Hello fri3nd, you're\r\n       looking          good today!", 1)
+    [returns] => ['Hello', 'fri', 'nd', "you're", 'looking', 'good', 'today']
+)
+Array
+(
+    [code] => str_word_count("Hello fri3nd, you're\r\n       looking          good today!", 2)
+    [returns] => {0: 'Hello', 6: 'fri', 10: 'nd', 14: "you're", 29: 'looking', 46: 'good', 51: 'today'}
+)
+Array
+(
+    [code] => str_word_count("Hello fri3nd, you're\r\n       looking          good today!", 1, '\u00e0\u00e1\u00e3\u00e73')
+    [returns] => ['Hello', 'fri3nd', "you're", 'looking', 'good', 'today']
+)
+Array
+(
+    [code] => str_word_count('hey', 2)
+    [returns] => {0: 'hey'}
+)
+*/
+class StrWordCount extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\str_word_count(/* put stuff here */);
+        $expected = \str_word_count(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

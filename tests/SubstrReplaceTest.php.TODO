@@ -1,0 +1,49 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => substr_replace('ABCDEFGH:/MNRPQR/', 'bob', 0)
+    [returns] => 'bob'
+)
+Array
+(
+    [code] => var $var = 'ABCDEFGH:/MNRPQR/'
+substr_replace($var, 'bob', 0, $var.length)
+    [returns] => 'bob'
+)
+Array
+(
+    [code] => substr_replace('ABCDEFGH:/MNRPQR/', 'bob', 0, 0)
+    [returns] => 'bobABCDEFGH:/MNRPQR/'
+)
+Array
+(
+    [code] => substr_replace('ABCDEFGH:/MNRPQR/', 'bob', 10, -1)
+    [returns] => 'ABCDEFGH:/bob/'
+)
+Array
+(
+    [code] => substr_replace('ABCDEFGH:/MNRPQR/', 'bob', -7, -1)
+    [returns] => 'ABCDEFGH:/bob/'
+)
+Array
+(
+    [code] => substr_replace('ABCDEFGH:/MNRPQR/', '', 10, -1)
+    [returns] => 'ABCDEFGH://'
+)
+*/
+class SubstrReplace extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\substr_replace(/* put stuff here */);
+        $expected = \substr_replace(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

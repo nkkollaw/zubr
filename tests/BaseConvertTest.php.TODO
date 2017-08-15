@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => base_convert('A37334', 16, 2)
+    [returns] => '101000110111001100110100'
+)
+*/
+class BaseConvert extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\base_convert(/* put stuff here */);
+        $expected = \base_convert(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

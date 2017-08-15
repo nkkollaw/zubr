@@ -1,0 +1,49 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $trans = {'hello' : 'hi', 'hi' : 'hello'}
+strtr('hi all, I said hello', $trans)
+    [returns] => 'hello all, I said hi'
+)
+Array
+(
+    [code] => strtr('äaabaåccasdeöoo', 'äåö','aao')
+    [returns] => 'aaabaaccasdeooo'
+)
+Array
+(
+    [code] => strtr('ääääääää', 'ä', 'a')
+    [returns] => 'aaaaaaaa'
+)
+Array
+(
+    [code] => strtr('http', 'pthxyz','xyzpth')
+    [returns] => 'zyyx'
+)
+Array
+(
+    [code] => strtr('zyyx', 'pthxyz','xyzpth')
+    [returns] => 'http'
+)
+Array
+(
+    [code] => strtr('aa', {'a':1,'aa':2})
+    [returns] => '2'
+)
+*/
+class Strtr extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strtr(/* put stuff here */);
+        $expected = \strtr(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

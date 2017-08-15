@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\levenshtein()
+ *
+ * @link https://secure.php.net/levenshtein
+ *
+ * NOTES: same as \levenshtein() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function levenshtein ($str1, $str2, $cost_ins = null, $cost_rep = null, $cost_del = null)
+{
+    // TODO: implement
+}

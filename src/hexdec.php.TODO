@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\hexdec()
+ *
+ * @link https://secure.php.net/hexdec
+ *
+ * NOTES: same as \hexdec() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function hexdec ($hex_string)
+{
+    // TODO: implement
+}

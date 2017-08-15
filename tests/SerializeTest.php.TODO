@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => serialize(['Kevin', 'van', 'Zonneveld'])
+    [returns] => 'a:3:{i:0;s:5:"Kevin";i:1;s:3:"van";i:2;s:9:"Zonneveld";}'
+)
+Array
+(
+    [code] => serialize({firstName: 'Kevin', midName: 'van'})
+    [returns] => 'a:2:{s:9:"firstName";s:5:"Kevin";s:7:"midName";s:3:"van";}'
+)
+*/
+class Serialize extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\serialize(/* put stuff here */);
+        $expected = \serialize(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

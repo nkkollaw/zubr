@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => chunk_split('Hello world!', 1, '*')
+    [returns] => 'H*e*l*l*o* *w*o*r*l*d*!*'
+)
+Array
+(
+    [code] => chunk_split('Hello world!', 10, '*')
+    [returns] => 'Hello worl*d!*'
+)
+*/
+class ChunkSplit extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\chunk_split(/* put stuff here */);
+        $expected = \chunk_split(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

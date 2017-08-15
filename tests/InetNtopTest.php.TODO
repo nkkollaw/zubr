@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => inet_ntop('\x7F\x00\x00\x01')
+    [returns] => '127.0.0.1'
+)
+*/
+class InetNtop extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\inet_ntop(/* put stuff here */);
+        $expected = \inet_ntop(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

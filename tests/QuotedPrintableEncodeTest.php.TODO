@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => quoted_printable_encode('a=b=c')
+    [returns] => 'a=3Db=3Dc'
+)
+Array
+(
+    [code] => quoted_printable_encode('abc   \r\n123   \r\n')
+    [returns] => 'abc  =20\r\n123  =20\r\n'
+)
+Array
+(
+    [code] => quoted_printable_encode('0123456789012345678901234567890123456789012345678901234567890123456789012345')
+    [returns] => '012345678901234567890123456789012345678901234567890123456789012345678901234=\r\n5'
+)
+*/
+class QuotedPrintableEncode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\quoted_printable_encode(/* put stuff here */);
+        $expected = \quoted_printable_encode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

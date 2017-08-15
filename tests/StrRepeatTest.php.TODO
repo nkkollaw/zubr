@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => str_repeat('-=', 10)
+    [returns] => '-=-=-=-=-=-=-=-=-=-='
+)
+*/
+class StrRepeat extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\str_repeat(/* put stuff here */);
+        $expected = \str_repeat(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

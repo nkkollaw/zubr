@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strnatcmp()
+ *
+ * @link https://secure.php.net/strnatcmp
+ *
+ * NOTES: same as \strnatcmp() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strnatcmp ($str1, $str2)
+{
+    // TODO: implement
+}

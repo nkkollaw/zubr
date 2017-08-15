@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => array_reverse( [ 'php', '4.0', ['green', 'red'] ], true)
+    [returns] => { 2: ['green', 'red'], 1: '4.0', 0: 'php'}
+)
+*/
+class ArrayReverse extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_reverse(/* put stuff here */);
+        $expected = \array_reverse(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

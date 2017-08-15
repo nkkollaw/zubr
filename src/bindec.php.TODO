@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\bindec()
+ *
+ * @link https://secure.php.net/bindec
+ *
+ * NOTES: same as \bindec() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function bindec ($binary_string)
+{
+    // TODO: implement
+}

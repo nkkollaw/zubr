@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\max()
+ *
+ * @link https://secure.php.net/max
+ *
+ * NOTES: same as \max() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function max (array $value1, $value2 = null, ...$values)
+{
+    // TODO: implement
+}

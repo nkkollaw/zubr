@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\asinh()
+ *
+ * @link https://secure.php.net/asinh
+ *
+ * NOTES: same as \asinh() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function asinh ($arg)
+{
+    // TODO: implement
+}

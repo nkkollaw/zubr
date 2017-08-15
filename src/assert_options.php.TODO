@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\assert_options()
+ *
+ * @link https://secure.php.net/assert_options
+ *
+ * NOTES: same as \assert_options() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function assert_options($what, $value = null)
+{
+    // TODO: implement
+}

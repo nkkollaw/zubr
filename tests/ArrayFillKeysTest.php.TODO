@@ -1,0 +1,24 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $keys = {'a': 'foo', 2: 5, 3: 10, 4: 'bar'}
+array_fill_keys($keys, 'banana')
+    [returns] => {"foo": "banana", 5: "banana", 10: "banana", "bar": "banana"}
+)
+*/
+class ArrayFillKeys extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_fill_keys(/* put stuff here */);
+        $expected = \array_fill_keys(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

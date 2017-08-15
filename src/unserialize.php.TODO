@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\unserialize()
+ *
+ * @link https://secure.php.net/unserialize
+ *
+ * NOTES: same as \unserialize() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function unserialize ($str, array $options = null)
+{
+    // TODO: implement
+}

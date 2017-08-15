@@ -1,0 +1,53 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html', 1)
+    [returns] => '/www/htdocs'
+)
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html', 'PATHINFO_BASENAME')
+    [returns] => 'index.html'
+)
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html', 'PATHINFO_EXTENSION')
+    [returns] => 'html'
+)
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html', 'PATHINFO_FILENAME')
+    [returns] => 'index'
+)
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html', 2 | 4)
+    [returns] => {basename: 'index.html', extension: 'html'}
+)
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html', 'PATHINFO_ALL')
+    [returns] => {dirname: '/www/htdocs', basename: 'index.html', extension: 'html', filename: 'index'}
+)
+Array
+(
+    [code] => pathinfo('/www/htdocs/index.html')
+    [returns] => {dirname: '/www/htdocs', basename: 'index.html', extension: 'html', filename: 'index'}
+)
+*/
+class Pathinfo extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\pathinfo(/* put stuff here */);
+        $expected = \pathinfo(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

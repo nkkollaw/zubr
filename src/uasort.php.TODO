@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\uasort()
+ *
+ * @link https://secure.php.net/uasort
+ *
+ * NOTES: same as \uasort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function uasort (array &$array, $cmp_function)
+{
+    // TODO: implement
+}
