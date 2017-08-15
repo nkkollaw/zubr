@@ -60,3 +60,5 @@ utils/stubs/vendor/
 # "Stubs" utility
 utils/stubs/locutus/
 utils/stubs/phpstorm-stubs/
+
+utils/stubs/dist/

@@ -8,6 +8,7 @@
     ],
     "require": {
         "symfony/yaml": "^3.3",
-        "ijortengab/parse-html": "^0.0.7"
+        "ijortengab/parse-html": "^0.0.7",
+        "nkkollaw/str-utils": "^1.0"
     }
 }
