@@ -14,6 +14,9 @@ define('LOCUTUS_DIR', __DIR__ . '/locutus/website/source/php'); // contains webs
 define('LOCUTUS_IGNORE', '_helpers, index.html');
 define('LOCUTUS_COMMENT_REGEX', '/---(.*?)---/s'); // delimitates comment block
 
+define('SRC_DIR', realpath('./../../src/'));
+define('TESTS_DIR', realpath('./../../tests/'));
+
 try {
     // checks
     if (!is_dir(PHPSTORM_DIR) || !is_readable(PHPSTORM_DIR)) {
@@ -127,24 +130,24 @@ try {
     }
 
     // write files
-    if (!is_dir(__DIR__ . '/dist/')) {
-        $ok = mkdir(__DIR__ . '/dist/');
-        if (!$ok) {
-            throw new Exception('unable to created "dist" dir');
-        }
-    }
-    if (!is_dir(__DIR__ . '/dist/src/')) {
-        $ok = mkdir(__DIR__ . '/dist/src/');
-        if (!$ok) {
-            throw new Exception('unable to created "src" dir');
-        }
-    }
-    if (!is_dir(__DIR__ . '/dist/tests/')) {
-        $ok = mkdir(__DIR__ . '/dist/tests/');
-        if (!$ok) {
-            throw new Exception('unable to created "tests" dir');
-        }
-    }
+    // if (!is_dir(__DIR__ . '/dist/')) {
+    //     $ok = mkdir(__DIR__ . '/dist/');
+    //     if (!$ok) {
+    //         throw new Exception('unable to created "dist" dir');
+    //     }
+    // }
+    // if (!is_dir(__DIR__ . '/dist/src/')) {
+    //     $ok = mkdir(__DIR__ . '/dist/src/');
+    //     if (!$ok) {
+    //         throw new Exception('unable to created "src" dir');
+    //     }
+    // }
+    // if (!is_dir(__DIR__ . '/dist/tests/')) {
+    //     $ok = mkdir(__DIR__ . '/dist/tests/');
+    //     if (!$ok) {
+    //         throw new Exception('unable to created "tests" dir');
+    //     }
+    // }
 
     foreach ($stubs as $function_name => $function_body) {
         if (!isset($functions[$function_name])) {
@@ -154,7 +157,15 @@ try {
         }
 
         // create stub file
-        $file_path = "/dist/src/$function_name.php";
+        if (!is_dir(SRC_DIR) || !is_writable(SRC_DIR)) {
+            throw new Exception('invalid src dir');
+        }
+        $base_file_path = SRC_DIR . '/' . $function_name . '.php';
+        if (is_file($base_file_path)) {
+            // we've already implemented this
+            continue;
+        }
+        $file_path = $base_file_path . '.TODO';
         $function_body = str_replace(' { }', "\n{\n    // TODO: implement\n}", $function_body);
         $file_contents = '';
         $file_contents .= <<<EOF
@@ -170,11 +181,19 @@ declare(strict_types=1);
 */
 $function_body
 EOF;
-        file_put_contents(__DIR__ . $file_path, $file_contents);
+        file_put_contents($file_path, $file_contents);
 
         // create tests file
+        if (!is_dir(TESTS_DIR) || !is_writable(TESTS_DIR)) {
+            throw new Exception('invalid tests dir');
+        }
         $class_name = ucwords(StrUtils::toCamelCase($function_name));
-        $file_path = '/dist/tests/' . $class_name . '.php';
+        $base_file_path = TESTS_DIR . '/' . $class_name . 'Test.php';
+        if (is_file($base_file_path)) {
+            // we've already implemented this
+            continue;
+        }
+        $file_path = $base_file_path . '.TODO';
         $file_contents = '';
         $file_contents .= <<<EOF
 <?php
@@ -201,7 +220,7 @@ class $class_name extends PHPUnit\Framework\TestCase
     }
 }
 EOF;
-        file_put_contents(__DIR__ . $file_path, $file_contents);
+        file_put_contents($file_path, $file_contents);
     }
 
     echo "\n\n👍🏻  done\n\n";
