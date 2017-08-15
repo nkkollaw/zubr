@@ -8,7 +8,7 @@ use nkkollaw\Utils\Strings\Strings as StrUtils;
 
 define('PHPSTORM_DIR', __DIR__ . '/phpstorm-stubs/standard');
 define('PHPSTORM_IGNORE', '_standard_manual.php, _types.php, standard_defines.php');
-define('PHPSTORM_FUNC_REGEX', '/(function .* })/U'); // functions declarations
+define('PHPSTORM_FUNC_REGEX', '/(function .*})/U'); // functions declarations
 
 define('LOCUTUS_DIR', __DIR__ . '/locutus/website/source/php'); // contains website files built with `npm run injectweb`
 define('LOCUTUS_IGNORE', '_helpers, index.html');
@@ -111,6 +111,11 @@ try {
                 $m = array();
                 preg_match('/function (.*)\(/', $function_body, $m);
                 $function_name = trim($m[1]);
+                if (!$function_name) {
+                    throw new Exception('no function name');
+                }
+
+                echo "\n > $function_name";
 
                 $stubs[$function_name] = $function_body;
             }
