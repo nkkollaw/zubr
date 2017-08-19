@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\stristr()
+ *
+ * @link https://secure.php.net/stristr
+ *
+ * NOTES: same as \stristr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function stristr ($haystack, $needle, $before_needle = null)
+{
+    // TODO: implement
+}

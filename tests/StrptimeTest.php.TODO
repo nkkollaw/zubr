@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strptime('20091112222135', '%Y%m%d%H%M%S') // Return value will depend on date and locale
+    [returns] => {tm_sec: 35, tm_min: 21, tm_hour: 22, tm_mday: 12, tm_mon: 10, tm_year: 109, tm_wday: 4, tm_yday: 315, unparsed: ''}
+)
+Array
+(
+    [code] => strptime('2009extra', '%Y')
+    [returns] => {tm_sec:0, tm_min:0, tm_hour:0, tm_mday:0, tm_mon:0, tm_year:109, tm_wday:3, tm_yday: -1, unparsed: 'extra'}
+)
+*/
+class Strptime extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strptime(/* put stuff here */);
+        $expected = \strptime(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

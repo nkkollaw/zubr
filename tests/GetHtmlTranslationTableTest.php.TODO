@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => get_html_translation_table('HTML_SPECIALCHARS')
+    [returns] => {'"': '&quot;', '&': '&amp;', '<': '&lt;', '>': '&gt;'}
+)
+*/
+class GetHtmlTranslationTable extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\get_html_translation_table(/* put stuff here */);
+        $expected = \get_html_translation_table(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

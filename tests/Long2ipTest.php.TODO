@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => long2ip( 3221234342 )
+    [returns] => '192.0.34.166'
+)
+*/
+class Long2ip extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\long2ip(/* put stuff here */);
+        $expected = \long2ip(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

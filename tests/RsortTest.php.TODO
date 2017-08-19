@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $arr = ['Kevin', 'van', 'Zonneveld']
+rsort($arr)
+var $result = $arr
+    [returns] => ['van', 'Zonneveld', 'Kevin']
+)
+Array
+(
+    [code] => ini_set('locutus.sortByReference', true)
+var $fruits = {d: 'lemon', a: 'orange', b: 'banana', c: 'apple'}
+rsort($fruits)
+var $result = $fruits
+    [returns] => {0: 'orange', 1: 'lemon', 2: 'banana', 3: 'apple'}
+)
+*/
+class Rsort extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\rsort(/* put stuff here */);
+        $expected = \rsort(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

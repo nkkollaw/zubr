@@ -1,0 +1,36 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $input = {4: "red", 'abc': "green", 2: "blue", 'dud': "yellow"}
+array_splice($input, 2)
+    [returns] => {4: "red", 'abc': "green"}
+)
+Array
+(
+    [code] => var $input = ["red", "green", "blue", "yellow"]
+array_splice($input, 3, 0, "purple")
+    [returns] => []
+)
+Array
+(
+    [code] => var $input = ["red", "green", "blue", "yellow"]
+array_splice($input, -1, 1, ["black", "maroon"])
+    [returns] => ["yellow"]
+)
+*/
+class ArraySplice extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_splice(/* put stuff here */);
+        $expected = \array_splice(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

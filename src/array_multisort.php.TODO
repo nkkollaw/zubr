@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_multisort()
+ *
+ * @link https://secure.php.net/array_multisort
+ *
+ * NOTES: same as \array_multisort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_multisort (array &$arr, $arg = null, $arg = null, $_ = null)
+{
+    // TODO: implement
+}

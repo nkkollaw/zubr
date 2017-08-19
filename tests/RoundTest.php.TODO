@@ -1,0 +1,43 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => round(1241757, -3)
+    [returns] => 1242000
+)
+Array
+(
+    [code] => round(3.6)
+    [returns] => 4
+)
+Array
+(
+    [code] => round(2.835, 2)
+    [returns] => 2.84
+)
+Array
+(
+    [code] => round(1.1749999999999, 2)
+    [returns] => 1.17
+)
+Array
+(
+    [code] => round(58551.799999999996, 2)
+    [returns] => 58551.8
+)
+*/
+class Round extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\round(/* put stuff here */);
+        $expected = \round(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

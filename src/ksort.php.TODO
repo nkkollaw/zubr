@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\ksort()
+ *
+ * @link https://secure.php.net/ksort
+ *
+ * NOTES: same as \ksort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function ksort (array &$array, $sort_flags = null)
+{
+    // TODO: implement
+}

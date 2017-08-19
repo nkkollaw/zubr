@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\substr_compare()
+ *
+ * @link https://secure.php.net/substr_compare
+ *
+ * NOTES: same as \substr_compare() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function substr_compare ($main_str, $str, $offset, $length = null, $case_insensitivity = null)
+{
+    // TODO: implement
+}

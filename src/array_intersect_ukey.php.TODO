@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_intersect_ukey()
+ *
+ * @link https://secure.php.net/array_intersect_ukey
+ *
+ * NOTES: same as \array_intersect_ukey() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_intersect_ukey(array $array1, array $array2, array $_ = null, $key_compare_func)
+{
+    // TODO: implement
+}

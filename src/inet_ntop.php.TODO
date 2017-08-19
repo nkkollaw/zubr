@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\inet_ntop()
+ *
+ * @link https://secure.php.net/inet_ntop
+ *
+ * NOTES: same as \inet_ntop() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function inet_ntop ($in_addr)
+{
+    // TODO: implement
+}

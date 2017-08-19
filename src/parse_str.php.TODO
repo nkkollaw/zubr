@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\parse_str()
+ *
+ * @link https://secure.php.net/parse_str
+ *
+ * NOTES: same as \parse_str() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function parse_str ($str, array &$arr = null)
+{
+    // TODO: implement
+}

@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\round()
+ *
+ * @link https://secure.php.net/round
+ *
+ * NOTES: same as \round() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function round ($val, $precision = 0, $mode = PHP_ROUND_HALF_UP)
+{
+    // TODO: implement
+}

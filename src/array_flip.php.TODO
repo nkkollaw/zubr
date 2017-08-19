@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_flip()
+ *
+ * @link https://secure.php.net/array_flip
+ *
+ * NOTES: same as \array_flip() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_flip(array $trans)
+{
+    // TODO: implement
+}

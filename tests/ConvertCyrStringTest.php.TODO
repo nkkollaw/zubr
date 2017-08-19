@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => convert_cyr_string(String.fromCharCode(214), 'k', 'w').charCodeAt(0) === 230; // Char. 214 of KOI8-R gives equivalent number value 230 in win1251
+    [returns] => true
+)
+*/
+class ConvertCyrString extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\convert_cyr_string(/* put stuff here */);
+        $expected = \convert_cyr_string(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

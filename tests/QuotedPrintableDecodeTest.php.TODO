@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => quoted_printable_decode('a=3Db=3Dc')
+    [returns] => 'a=b=c'
+)
+Array
+(
+    [code] => quoted_printable_decode('abc  =20\r\n123  =20\r\n')
+    [returns] => 'abc   \r\n123   \r\n'
+)
+Array
+(
+    [code] => quoted_printable_decode('012345678901234567890123456789012345678901234567890123456789012345678901234=\r\n56789')
+    [returns] => '01234567890123456789012345678901234567890123456789012345678901234567890123456789'
+)
+Array
+(
+    [code] => quoted_printable_decode("Lorem ipsum dolor sit amet=23, consectetur adipisicing elit")
+    [returns] => 'Lorem ipsum dolor sit amet#, consectetur adipisicing elit'
+)
+*/
+class QuotedPrintableDecode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\quoted_printable_decode(/* put stuff here */);
+        $expected = \quoted_printable_decode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

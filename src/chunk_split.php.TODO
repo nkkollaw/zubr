@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\chunk_split()
+ *
+ * @link https://secure.php.net/chunk_split
+ *
+ * NOTES: same as \chunk_split() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function chunk_split ($body, $chunklen = null, $end = null)
+{
+    // TODO: implement
+}

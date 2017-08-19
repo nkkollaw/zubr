@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strtr()
+ *
+ * @link https://secure.php.net/strtr
+ *
+ * NOTES: same as \strtr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strtr ($str, $from, $to)
+{
+    // TODO: implement
+}

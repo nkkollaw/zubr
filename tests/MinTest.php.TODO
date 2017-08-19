@@ -1,0 +1,48 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => min(1, 3, 5, 6, 7)
+    [returns] => 1
+)
+Array
+(
+    [code] => min([2, 4, 5])
+    [returns] => 2
+)
+Array
+(
+    [code] => min(0, 'hello')
+    [returns] => 0
+)
+Array
+(
+    [code] => min('hello', 0)
+    [returns] => 'hello'
+)
+Array
+(
+    [code] => min(-1, 'hello')
+    [returns] => -1
+)
+Array
+(
+    [code] => min([2, 4, 8], [2, 5, 7])
+    [returns] => [2, 4, 8]
+)
+*/
+class Min extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\min(/* put stuff here */);
+        $expected = \min(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

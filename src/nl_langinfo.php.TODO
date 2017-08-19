@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\nl_langinfo()
+ *
+ * @link https://secure.php.net/nl_langinfo
+ *
+ * NOTES: same as \nl_langinfo() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function nl_langinfo ($item)
+{
+    // TODO: implement
+}

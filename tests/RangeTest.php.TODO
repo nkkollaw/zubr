@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => range ( 0, 12 )
+    [returns] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+)
+Array
+(
+    [code] => range( 0, 100, 10 )
+    [returns] => [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+)
+Array
+(
+    [code] => range( 'a', 'i' )
+    [returns] => ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+)
+Array
+(
+    [code] => range( 'c', 'a' )
+    [returns] => ['c', 'b', 'a']
+)
+*/
+class Range extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\range(/* put stuff here */);
+        $expected = \range(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

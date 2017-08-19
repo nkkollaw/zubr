@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_pad()
+ *
+ * @link https://secure.php.net/array_pad
+ *
+ * NOTES: same as \array_pad() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_pad(array $input, $pad_size, $pad_value)
+{
+    // TODO: implement
+}

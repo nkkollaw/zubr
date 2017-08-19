@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_intersect()
+ *
+ * @link https://secure.php.net/array_intersect
+ *
+ * NOTES: same as \array_intersect() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_intersect(array $array1, array $array2, array $_ = null)
+{
+    // TODO: implement
+}

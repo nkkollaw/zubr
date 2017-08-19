@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\str_ireplace()
+ *
+ * @link https://secure.php.net/str_ireplace
+ *
+ * NOTES: same as \str_ireplace() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function str_ireplace ($search, $replace, $subject, &$count = null)
+{
+    // TODO: implement
+}

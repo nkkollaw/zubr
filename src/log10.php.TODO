@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\log10()
+ *
+ * @link https://secure.php.net/log10
+ *
+ * NOTES: same as \log10() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function log10 ($arg)
+{
+    // TODO: implement
+}

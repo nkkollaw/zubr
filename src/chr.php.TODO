@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\chr()
+ *
+ * @link https://secure.php.net/chr
+ *
+ * NOTES: same as \chr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function chr ($ascii)
+{
+    // TODO: implement
+}

@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\natsort()
+ *
+ * @link https://secure.php.net/natsort
+ *
+ * NOTES: same as \natsort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function natsort (array &$array)
+{
+    // TODO: implement
+}

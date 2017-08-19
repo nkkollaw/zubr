@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => str_getcsv('"abc","def","ghi"')
+    [returns] => ['abc', 'def', 'ghi']
+)
+Array
+(
+    [code] => str_getcsv('"row2""cell1","row2cell2","row2cell3"', null, null, '"')
+    [returns] => ['row2"cell1', 'row2cell2', 'row2cell3']
+)
+*/
+class StrGetcsv extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\str_getcsv(/* put stuff here */);
+        $expected = \str_getcsv(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

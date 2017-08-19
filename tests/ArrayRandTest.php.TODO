@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => array_rand( ['Kevin'], 1 )
+    [returns] => '0'
+)
+*/
+class ArrayRand extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_rand(/* put stuff here */);
+        $expected = \array_rand(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

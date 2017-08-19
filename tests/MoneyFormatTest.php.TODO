@@ -1,0 +1,88 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => money_format('%i', 1234.56)
+    [returns] => ' USD 1,234.56'
+)
+Array
+(
+    [code] => money_format('%14#8.2n', 1234.5678)
+    [returns] => ' $     1,234.57'
+)
+Array
+(
+    [code] => money_format('%14#8.2n', -1234.5678)
+    [returns] => '-$     1,234.57'
+)
+Array
+(
+    [code] => money_format('%(14#8.2n', 1234.5678)
+    [returns] => ' $     1,234.57 '
+)
+Array
+(
+    [code] => money_format('%(14#8.2n', -1234.5678)
+    [returns] => '($     1,234.57)'
+)
+Array
+(
+    [code] => money_format('%=014#8.2n', 1234.5678)
+    [returns] => ' $000001,234.57'
+)
+Array
+(
+    [code] => money_format('%=014#8.2n', -1234.5678)
+    [returns] => '-$000001,234.57'
+)
+Array
+(
+    [code] => money_format('%=*14#8.2n', 1234.5678)
+    [returns] => ' $*****1,234.57'
+)
+Array
+(
+    [code] => money_format('%=*14#8.2n', -1234.5678)
+    [returns] => '-$*****1,234.57'
+)
+Array
+(
+    [code] => money_format('%=*^14#8.2n', 1234.5678)
+    [returns] => '  $****1234.57'
+)
+Array
+(
+    [code] => money_format('%=*^14#8.2n', -1234.5678)
+    [returns] => ' -$****1234.57'
+)
+Array
+(
+    [code] => money_format('%=*!14#8.2n', 1234.5678)
+    [returns] => ' *****1,234.57'
+)
+Array
+(
+    [code] => money_format('%=*!14#8.2n', -1234.5678)
+    [returns] => '-*****1,234.57'
+)
+Array
+(
+    [code] => money_format('%i', 3590)
+    [returns] => ' USD 3,590.00'
+)
+*/
+class MoneyFormat extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\money_format(/* put stuff here */);
+        $expected = \money_format(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

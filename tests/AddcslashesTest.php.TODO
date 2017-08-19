@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => addcslashes('foo[ ]', 'A..z'); // Escape all ASCII within capital A to lower z range, including square brackets
+    [returns] => "\\f\\o\\o\\[ \\]"
+)
+Array
+(
+    [code] => addcslashes("zoo['.']", 'z..A'); // Only escape z, period, and A here since not a lower-to-higher range
+    [returns] => "\\zoo['\\.']"
+)
+*/
+class Addcslashes extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\addcslashes(/* put stuff here */);
+        $expected = \addcslashes(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,35 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var odd = function (num) {return (num & 1);}
+array_filter({"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}, odd)
+    [returns] => {"a": 1, "c": 3, "e": 5}
+)
+Array
+(
+    [code] => var even = function (num) {return (!(num & 1));}
+array_filter([6, 7, 8, 9, 10, 11, 12], even)
+    [returns] => [ 6, , 8, , 10, , 12 ]
+)
+Array
+(
+    [code] => array_filter({"a": 1, "b": false, "c": -1, "d": 0, "e": null, "f":'', "g":undefined})
+    [returns] => {"a":1, "c":-1}
+)
+*/
+class ArrayFilter extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_filter(/* put stuff here */);
+        $expected = \array_filter(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strspn()
+ *
+ * @link https://secure.php.net/strspn
+ *
+ * NOTES: same as \strspn() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strspn ($subject, $mask, $start = null, $length = null)
+{
+    // TODO: implement
+}

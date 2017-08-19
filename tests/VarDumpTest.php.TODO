@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var_dump(1)
+    [returns] => 'int(1)'
+)
+*/
+class VarDump extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\var_dump(/* put stuff here */);
+        $expected = \var_dump(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

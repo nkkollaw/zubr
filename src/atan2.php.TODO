@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\atan2()
+ *
+ * @link https://secure.php.net/atan2
+ *
+ * NOTES: same as \atan2() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function atan2 ($y, $x)
+{
+    // TODO: implement
+}

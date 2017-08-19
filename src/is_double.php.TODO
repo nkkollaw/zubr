@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\is_double()
+ *
+ * @link https://secure.php.net/is_double
+ *
+ * NOTES: same as \is_double() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function is_double ($var)
+{
+    // TODO: implement
+}

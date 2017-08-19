@@ -1,0 +1,27 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $string = "\t\t\t\nThis is\tan example\nstring\n"
+var $tok = strtok($string, " \n\t")
+var $b = ''
+while ($tok !== false) {$b += "Word="+$tok+"\n"; $tok = strtok(" \n\t");}
+var $result = $b
+    [returns] => "Word=This\nWord=is\nWord=an\nWord=example\nWord=string\n"
+)
+*/
+class Strtok extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strtok(/* put stuff here */);
+        $expected = \strtok(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

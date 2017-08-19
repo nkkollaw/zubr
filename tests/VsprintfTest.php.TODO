@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => vsprintf('%04d-%02d-%02d', [1988, 8, 1])
+    [returns] => '1988-08-01'
+)
+*/
+class Vsprintf extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\vsprintf(/* put stuff here */);
+        $expected = \vsprintf(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

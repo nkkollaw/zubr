@@ -1,0 +1,36 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $id = uniqid()
+var $result = $id.length === 13
+    [returns] => true
+)
+Array
+(
+    [code] => var $id = uniqid('foo')
+var $result = $id.length === (13 + 'foo'.length)
+    [returns] => true
+)
+Array
+(
+    [code] => var $id = uniqid('bar', true)
+var $result = $id.length === (23 + 'bar'.length)
+    [returns] => true
+)
+*/
+class Uniqid extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\uniqid(/* put stuff here */);
+        $expected = \uniqid(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

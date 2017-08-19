@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => array_multisort([1, 2, 1, 2, 1, 2], [1, 2, 3, 4, 5, 6])
+    [returns] => true
+)
+Array
+(
+    [code] => var $characters = {A: 'Edward', B: 'Locke', C: 'Sabin', D: 'Terra', E: 'Edward'}
+var $jobs = {A: 'Warrior', B: 'Thief', C: 'Monk', D: 'Mage', E: 'Knight'}
+array_multisort($characters, 'SORT_DESC', 'SORT_STRING', $jobs, 'SORT_ASC', 'SORT_STRING')
+    [returns] => true
+)
+Array
+(
+    [code] => var $lastnames = [ 'Carter','Adams','Monroe','Tyler','Madison','Kennedy','Adams']
+var $firstnames = ['James', 'John' ,'James', 'John', 'James',  'John',   'John']
+var $president = [ 39, 6, 5, 10, 4, 35, 2 ]
+array_multisort($firstnames, 'SORT_DESC', 'SORT_STRING', $lastnames, 'SORT_ASC', 'SORT_STRING', $president, 'SORT_NUMERIC')
+    [returns] => true
+)
+*/
+class ArrayMultisort extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_multisort(/* put stuff here */);
+        $expected = \array_multisort(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

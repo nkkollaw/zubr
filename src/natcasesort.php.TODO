@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\natcasesort()
+ *
+ * @link https://secure.php.net/natcasesort
+ *
+ * NOTES: same as \natcasesort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function natcasesort (array &$array)
+{
+    // TODO: implement
+}

@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => asinh(8723321.4)
+    [returns] => 16.67465779841863
+)
+*/
+class Asinh extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\asinh(/* put stuff here */);
+        $expected = \asinh(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

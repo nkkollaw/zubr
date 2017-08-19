@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => end({0: 'Kevin', 1: 'van', 2: 'Zonneveld'})
+    [returns] => 'Zonneveld'
+)
+Array
+(
+    [code] => end(['Kevin', 'van', 'Zonneveld'])
+    [returns] => 'Zonneveld'
+)
+*/
+class End extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\end(/* put stuff here */);
+        $expected = \end(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

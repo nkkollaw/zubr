@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_pop()
+ *
+ * @link https://secure.php.net/array_pop
+ *
+ * NOTES: same as \array_pop() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_pop (array &$array)
+{
+    // TODO: implement
+}

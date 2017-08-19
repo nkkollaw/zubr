@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\sizeof()
+ *
+ * @link https://secure.php.net/sizeof
+ *
+ * NOTES: same as \sizeof() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function sizeof($var, $mode)
+{
+    // TODO: implement
+}

@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => Math.ceil(sin(8723321.4) * 10000000)
+    [returns] => -9834330
+)
+*/
+class Sin extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\sin(/* put stuff here */);
+        $expected = \sin(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

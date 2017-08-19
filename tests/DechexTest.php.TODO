@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => dechex(10)
+    [returns] => 'a'
+)
+Array
+(
+    [code] => dechex(47)
+    [returns] => '2f'
+)
+Array
+(
+    [code] => dechex(-1415723993)
+    [returns] => 'ab9dc427'
+)
+*/
+class Dechex extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\dechex(/* put stuff here */);
+        $expected = \dechex(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

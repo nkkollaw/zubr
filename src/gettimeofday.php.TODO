@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\gettimeofday()
+ *
+ * @link https://secure.php.net/gettimeofday
+ *
+ * NOTES: same as \gettimeofday() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function gettimeofday ($return_float = null)
+{
+    // TODO: implement
+}

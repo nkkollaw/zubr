@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => urlencode('Kevin van Zonneveld!')
+    [returns] => 'Kevin+van+Zonneveld%21'
+)
+Array
+(
+    [code] => urlencode('http://kvz.io/')
+    [returns] => 'http%3A%2F%2Fkvz.io%2F'
+)
+Array
+(
+    [code] => urlencode('http://www.google.nl/search?q=Locutus&ie=utf-8')
+    [returns] => 'http%3A%2F%2Fwww.google.nl%2Fsearch%3Fq%3DLocutus%26ie%3Dutf-8'
+)
+*/
+class Urlencode extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\urlencode(/* put stuff here */);
+        $expected = \urlencode(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

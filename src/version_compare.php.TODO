@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\version_compare()
+ *
+ * @link https://secure.php.net/version_compare
+ *
+ * NOTES: same as \version_compare() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function version_compare($version1, $version2, $operator = null)
+{
+    // TODO: implement
+}

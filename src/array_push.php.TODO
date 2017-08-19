@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\array_push()
+ *
+ * @link https://secure.php.net/array_push
+ *
+ * NOTES: same as \array_push() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function array_push (array &$array, $var, $_ = null)
+{
+    // TODO: implement
+}

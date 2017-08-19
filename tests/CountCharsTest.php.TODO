@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => count_chars("Hello World!", 3)
+    [returns] => " !HWdelor"
+)
+Array
+(
+    [code] => count_chars("Hello World!", 1)
+    [returns] => {32:1,33:1,72:1,87:1,100:1,101:1,108:3,111:2,114:1}
+)
+*/
+class CountChars extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\count_chars(/* put stuff here */);
+        $expected = \count_chars(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\quotemeta()
+ *
+ * @link https://secure.php.net/quotemeta
+ *
+ * NOTES: same as \quotemeta() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function quotemeta ($str)
+{
+    // TODO: implement
+}

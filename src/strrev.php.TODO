@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strrev()
+ *
+ * @link https://secure.php.net/strrev
+ *
+ * NOTES: same as \strrev() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strrev ($string)
+{
+    // TODO: implement
+}

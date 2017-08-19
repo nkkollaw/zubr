@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strpos()
+ *
+ * @link https://secure.php.net/strpos
+ *
+ * NOTES: same as \strpos() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strpos ($haystack, $needle, $offset = 0)
+{
+    // TODO: implement
+}

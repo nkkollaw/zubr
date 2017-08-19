@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strripos()
+ *
+ * @link https://secure.php.net/strripos
+ *
+ * NOTES: same as \strripos() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strripos ($haystack, $needle, $offset = null)
+{
+    // TODO: implement
+}

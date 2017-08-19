@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strcspn('abcdefg123', '1234567890')
+    [returns] => 7
+)
+Array
+(
+    [code] => strcspn('123abc', '1234567890')
+    [returns] => 3
+)
+*/
+class Strcspn extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strcspn(/* put stuff here */);
+        $expected = \strcspn(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

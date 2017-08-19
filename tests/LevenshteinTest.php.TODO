@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => levenshtein('Kevin van Zonneveld', 'Kevin van Sommeveld')
+    [returns] => 3
+)
+Array
+(
+    [code] => levenshtein("carrrot", "carrots")
+    [returns] => 2
+)
+Array
+(
+    [code] => levenshtein("carrrot", "carrots", 2, 3, 4)
+    [returns] => 6
+)
+*/
+class Levenshtein extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\levenshtein(/* put stuff here */);
+        $expected = \levenshtein(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

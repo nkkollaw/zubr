@@ -1,0 +1,88 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => number_format(1234.56)
+    [returns] => '1,235'
+)
+Array
+(
+    [code] => number_format(1234.56, 2, ',', ' ')
+    [returns] => '1 234,56'
+)
+Array
+(
+    [code] => number_format(1234.5678, 2, '.', '')
+    [returns] => '1234.57'
+)
+Array
+(
+    [code] => number_format(67, 2, ',', '.')
+    [returns] => '67,00'
+)
+Array
+(
+    [code] => number_format(1000)
+    [returns] => '1,000'
+)
+Array
+(
+    [code] => number_format(67.311, 2)
+    [returns] => '67.31'
+)
+Array
+(
+    [code] => number_format(1000.55, 1)
+    [returns] => '1,000.6'
+)
+Array
+(
+    [code] => number_format(67000, 5, ',', '.')
+    [returns] => '67.000,00000'
+)
+Array
+(
+    [code] => number_format(0.9, 0)
+    [returns] => '1'
+)
+Array
+(
+    [code] => number_format('1.20', 2)
+    [returns] => '1.20'
+)
+Array
+(
+    [code] => number_format('1.20', 4)
+    [returns] => '1.2000'
+)
+Array
+(
+    [code] => number_format('1.2000', 3)
+    [returns] => '1.200'
+)
+Array
+(
+    [code] => number_format('1 000,50', 2, '.', ' ')
+    [returns] => '100 050.00'
+)
+Array
+(
+    [code] => number_format(1e-8, 8, '.', '')
+    [returns] => '0.00000001'
+)
+*/
+class NumberFormat extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\number_format(/* put stuff here */);
+        $expected = \number_format(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

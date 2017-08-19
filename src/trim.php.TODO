@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\trim()
+ *
+ * @link https://secure.php.net/trim
+ *
+ * NOTES: same as \trim() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function trim ($str, $charlist = " \t\n\r\0\x0B")
+{
+    // TODO: implement
+}

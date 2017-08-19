@@ -1,0 +1,30 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => str_ireplace('M', 'e', 'name')
+    [returns] => 'naee'
+)
+Array
+(
+    [code] => var $countObj = {}
+str_ireplace('M', 'e', 'name', $countObj)
+var $result = $countObj.value
+    [returns] => 1
+)
+*/
+class StrIreplace extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\str_ireplace(/* put stuff here */);
+        $expected = \str_ireplace(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

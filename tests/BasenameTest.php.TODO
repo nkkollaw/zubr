@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => basename('/www/site/home.htm', '.htm')
+    [returns] => 'home'
+)
+Array
+(
+    [code] => basename('ecra.php?p=1')
+    [returns] => 'ecra.php?p=1'
+)
+Array
+(
+    [code] => basename('/some/path/')
+    [returns] => 'path'
+)
+Array
+(
+    [code] => basename('/some/path_ext.ext/','.ext')
+    [returns] => 'path_ext'
+)
+*/
+class Basename extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\basename(/* put stuff here */);
+        $expected = \basename(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

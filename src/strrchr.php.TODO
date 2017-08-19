@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\strrchr()
+ *
+ * @link https://secure.php.net/strrchr
+ *
+ * NOTES: same as \strrchr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function strrchr ($haystack, $needle)
+{
+    // TODO: implement
+}

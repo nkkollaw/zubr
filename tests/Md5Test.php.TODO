@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => md5('Kevin van Zonneveld')
+    [returns] => '6e658d4bfcb59cc13f96c14450ac40b9'
+)
+*/
+class Md5 extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\md5(/* put stuff here */);
+        $expected = \md5(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

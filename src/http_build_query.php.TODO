@@ -1,0 +1,11 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\http_build_query()
+ *
+ * @link https://secure.php.net/http_build_query
+ *
+ * NOTES: same as \http_build_query() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function http_build_query ($query_data, $numeric_prefix = null, $arg_separator = null, $enc_type = PHP_QUERY_RFC1738){}

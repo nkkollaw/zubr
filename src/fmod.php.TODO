@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\fmod()
+ *
+ * @link https://secure.php.net/fmod
+ *
+ * NOTES: same as \fmod() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function fmod ($x, $y)
+{
+    // TODO: implement
+}

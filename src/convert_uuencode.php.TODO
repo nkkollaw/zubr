@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\convert_uuencode()
+ *
+ * @link https://secure.php.net/convert_uuencode
+ *
+ * NOTES: same as \convert_uuencode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function convert_uuencode ($data)
+{
+    // TODO: implement
+}

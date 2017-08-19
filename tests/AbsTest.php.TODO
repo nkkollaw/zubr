@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => abs(4.2)
+    [returns] => 4.2
+)
+Array
+(
+    [code] => abs(-4.2)
+    [returns] => 4.2
+)
+Array
+(
+    [code] => abs(-5)
+    [returns] => 5
+)
+Array
+(
+    [code] => abs('_argos')
+    [returns] => 0
+)
+*/
+class Abs extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\abs(/* put stuff here */);
+        $expected = \abs(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

@@ -1,0 +1,33 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => nl2br('Kevin\nvan\nZonneveld')
+    [returns] => 'Kevin<br />\nvan<br />\nZonneveld'
+)
+Array
+(
+    [code] => nl2br("\nOne\nTwo\n\nThree\n", false)
+    [returns] => '<br>\nOne<br>\nTwo<br>\n<br>\nThree<br>\n'
+)
+Array
+(
+    [code] => nl2br("\nOne\nTwo\n\nThree\n", true)
+    [returns] => '<br />\nOne<br />\nTwo<br />\n<br />\nThree<br />\n'
+)
+*/
+class Nl2br extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\nl2br(/* put stuff here */);
+        $expected = \nl2br(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

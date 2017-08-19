@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\addslashes()
+ *
+ * @link https://secure.php.net/addslashes
+ *
+ * NOTES: same as \addslashes() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function addslashes ($str)
+{
+    // TODO: implement
+}

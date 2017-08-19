@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\ip2long()
+ *
+ * @link https://secure.php.net/ip2long
+ *
+ * NOTES: same as \ip2long() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function ip2long ($ip_address)
+{
+    // TODO: implement
+}

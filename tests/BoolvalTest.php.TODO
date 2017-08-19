@@ -1,0 +1,73 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => boolval(true)
+    [returns] => true
+)
+Array
+(
+    [code] => boolval(false)
+    [returns] => false
+)
+Array
+(
+    [code] => boolval(0)
+    [returns] => false
+)
+Array
+(
+    [code] => boolval(0.0)
+    [returns] => false
+)
+Array
+(
+    [code] => boolval('')
+    [returns] => false
+)
+Array
+(
+    [code] => boolval('0')
+    [returns] => false
+)
+Array
+(
+    [code] => boolval([])
+    [returns] => false
+)
+Array
+(
+    [code] => boolval('')
+    [returns] => false
+)
+Array
+(
+    [code] => boolval(null)
+    [returns] => false
+)
+Array
+(
+    [code] => boolval(undefined)
+    [returns] => false
+)
+Array
+(
+    [code] => boolval('true')
+    [returns] => true
+)
+*/
+class Boolval extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\boolval(/* put stuff here */);
+        $expected = \boolval(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

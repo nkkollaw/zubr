@@ -1,0 +1,32 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => var $arr1 = {"color": "red", 0: 2, 1: 4}
+var $arr2 = {0: "a", 1: "b", "color": "green", "shape": "trapezoid", 2: 4}
+array_merge($arr1, $arr2)
+    [returns] => {"color": "green", 0: 2, 1: 4, 2: "a", 3: "b", "shape": "trapezoid", 4: 4}
+)
+Array
+(
+    [code] => var $arr1 = []
+var $arr2 = {1: "data"}
+array_merge($arr1, $arr2)
+    [returns] => {0: "data"}
+)
+*/
+class ArrayMerge extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\array_merge(/* put stuff here */);
+        $expected = \array_merge(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

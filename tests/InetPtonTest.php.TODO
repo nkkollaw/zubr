@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => inet_pton('::')
+    [returns] => '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0'
+)
+Array
+(
+    [code] => inet_pton('127.0.0.1')
+    [returns] => '\x7F\x00\x00\x01'
+)
+*/
+class InetPton extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\inet_pton(/* put stuff here */);
+        $expected = \inet_pton(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

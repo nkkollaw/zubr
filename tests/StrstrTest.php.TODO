@@ -1,0 +1,38 @@
+<?php
+declare(strict_types=1);
+
+/* These are tests from Locutus for porting
+TODO: implement adding automatically (if it's possible)
+
+Array
+(
+    [code] => strstr('Kevin van Zonneveld', 'van')
+    [returns] => 'van Zonneveld'
+)
+Array
+(
+    [code] => strstr('Kevin van Zonneveld', 'van', true)
+    [returns] => 'Kevin '
+)
+Array
+(
+    [code] => strstr('name@example.com', '@')
+    [returns] => '@example.com'
+)
+Array
+(
+    [code] => strstr('name@example.com', '@', true)
+    [returns] => 'name'
+)
+*/
+class Strstr extends PHPUnit\Framework\TestCase
+{
+    public function test()
+    {
+        $input = ['test1', 'tEsT2', 'TEST3'];
+        $actual = \Zubr\strstr(/* put stuff here */);
+        $expected = \strstr(/* put stuff here */);
+
+        $this->assertEquals($expected, $actual);
+    }
+}

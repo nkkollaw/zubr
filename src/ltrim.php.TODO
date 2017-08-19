@@ -1,0 +1,14 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * \Zubr\ltrim()
+ *
+ * @link https://secure.php.net/ltrim
+ *
+ * NOTES: same as \ltrim() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
+*/
+function ltrim ($str, $charlist = " \t\n\r\0\x0B")
+{
+    // TODO: implement
+}
