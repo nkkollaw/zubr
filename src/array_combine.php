@@ -1,10 +1,15 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace Zubr;
 
 /**
- * @link http://php.net/manual/en/function.array-combine.php
- */
+ * \Zubr\array_combine()
+ *
+ * @link https://secure.php.net/array_combine
+ *
+ * NOTES: same as \array_combine()
+*/
 function array_combine(array $keys, array $values)
 {
     return \array_combine($keys, $values);
