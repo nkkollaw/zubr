@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\convert_uuencode()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \convert_uuencode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function convert_uuencode ($data)
+function convert_uuencode($data)
 {
-    // TODO: implement
+    return \convert_uuencode($data);
 }

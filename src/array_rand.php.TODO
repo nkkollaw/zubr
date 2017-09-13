@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_rand()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_rand(array $input, $num_req = null)
 {
-    // TODO: implement
+    return \array_rand();
 }

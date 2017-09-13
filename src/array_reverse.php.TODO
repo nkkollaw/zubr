@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_reverse()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_reverse(array $array, $preserve_keys = null)
 {
-    // TODO: implement
+    return \array_reverse();
 }

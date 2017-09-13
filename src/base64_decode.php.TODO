@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\base64_decode()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \base64_decode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function base64_decode ($data, $strict = null)
+function base64_decode($data, $strict = null)
 {
-    // TODO: implement
+    return \base64_decode($data, $strict = null);
 }

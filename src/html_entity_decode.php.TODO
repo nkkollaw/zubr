@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\html_entity_decode()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \html_entity_decode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function html_entity_decode ($string, $quote_style = null, $charset = null)
+function html_entity_decode($string, $quote_style = null, $charset = null)
 {
-    // TODO: implement
+    return \html_entity_decode($string, $quote_style = null, $charset = null);
 }

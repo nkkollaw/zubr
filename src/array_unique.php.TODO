@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_unique()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_unique(array $array, $sort_flags = null)
 {
-    // TODO: implement
+    return \array_unique();
 }

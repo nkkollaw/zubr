@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\intval()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \intval() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function intval ($var, $base = null)
+function intval($var, $base = null)
 {
-    // TODO: implement
+    return \intval($var, $base = null);
 }

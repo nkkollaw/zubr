@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\range()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \range() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function range ($low, $high, $step = null)
+function range($low, $high, $step = null)
 {
-    // TODO: implement
+    return \range($low, $high, $step = null);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_merge()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \array_merge() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function array_merge (array $array1, array $array2 = null, array $_ = null)
+function array_merge(array $array1, array $array2 = null, array $_ = null)
 {
-    // TODO: implement
+    return \array_merge(array $array1, array $array2 = null, array $_ = null);
 }

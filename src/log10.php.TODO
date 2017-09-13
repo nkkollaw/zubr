@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\log10()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \log10() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function log10 ($arg)
+function log10($arg)
 {
-    // TODO: implement
+    return \log10($arg);
 }

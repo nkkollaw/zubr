@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\str_repeat()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \str_repeat() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function str_repeat ($input, $multiplier)
+function str_repeat($input, $multiplier)
 {
-    // TODO: implement
+    return \str_repeat($input, $multiplier);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\atan2()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \atan2() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function atan2 ($y, $x)
+function atan2($y, $x)
 {
-    // TODO: implement
+    return \atan2($y, $x);
 }

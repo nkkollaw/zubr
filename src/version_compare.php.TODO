@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\version_compare()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function version_compare($version1, $version2, $operator = null)
 {
-    // TODO: implement
+    return \version_compare();
 }

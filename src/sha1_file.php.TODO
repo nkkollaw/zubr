@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\sha1_file()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \sha1_file() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function sha1_file ($filename, $raw_output = null)
+function sha1_file($filename, $raw_output = null)
 {
-    // TODO: implement
+    return \sha1_file($filename, $raw_output = null);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\vsprintf()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \vsprintf() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function vsprintf ($format, array $args)
+function vsprintf($format, array $args)
 {
-    // TODO: implement
+    return \vsprintf($format, array $args);
 }

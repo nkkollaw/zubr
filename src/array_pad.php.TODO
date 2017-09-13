@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_pad()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_pad(array $input, $pad_size, $pad_value)
 {
-    // TODO: implement
+    return \array_pad();
 }

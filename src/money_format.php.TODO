@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\money_format()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \money_format() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function money_format ($format, $number)
+function money_format($format, $number)
 {
-    // TODO: implement
+    return \money_format($format, $number);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strrchr()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strrchr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strrchr ($haystack, $needle)
+function strrchr($haystack, $needle)
 {
-    // TODO: implement
+    return \strrchr($haystack, $needle);
 }

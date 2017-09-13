@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strpbrk()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strpbrk() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strpbrk ($haystack, $char_list)
+function strpbrk($haystack, $char_list)
 {
-    // TODO: implement
+    return \strpbrk($haystack, $char_list);
 }

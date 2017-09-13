@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\http_build_query()
  *
@@ -8,4 +10,4 @@ declare(strict_types=1);
  *
  * NOTES: same as \http_build_query() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function http_build_query ($query_data, $numeric_prefix = null, $arg_separator = null, $enc_type = PHP_QUERY_RFC1738){}
+function http_build_query($query_data, $numeric_prefix = null, $arg_separator = null, $enc_type = PHP_QUERY_RFC1738){}

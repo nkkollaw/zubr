@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\is_callable()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \is_callable() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function is_callable ($var, $syntax_only = null, &$callable_name = null)
+function is_callable($var, $syntax_only = null, &$callable_name = null)
 {
-    // TODO: implement
+    return \is_callable($var, $syntax_only = null, &$callable_name = null);
 }

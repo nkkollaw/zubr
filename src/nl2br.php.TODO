@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\nl2br()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \nl2br() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function nl2br ($string, $is_xhtml = null)
+function nl2br($string, $is_xhtml = null)
 {
-    // TODO: implement
+    return \nl2br($string, $is_xhtml = null);
 }

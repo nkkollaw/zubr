@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\shuffle()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \shuffle() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function shuffle (array &$array)
+function shuffle(array &$array)
 {
-    // TODO: implement
+    return \shuffle(array &$array);
 }

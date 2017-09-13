@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\get_html_translation_table()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \get_html_translation_table() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function get_html_translation_table ($table = null, $quote_style = null)
+function get_html_translation_table($table = null, $quote_style = null)
 {
-    // TODO: implement
+    return \get_html_translation_table($table = null, $quote_style = null);
 }

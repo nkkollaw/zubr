@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\quoted_printable_encode()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \quoted_printable_encode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function quoted_printable_encode ($str)
+function quoted_printable_encode($str)
 {
-    // TODO: implement
+    return \quoted_printable_encode($str);
 }

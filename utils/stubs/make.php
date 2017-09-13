@@ -118,11 +118,19 @@ try {
                     throw new Exception('no function name');
                 }
 
-                echo "\n > $function_name";
+                $m = array();
+                preg_match('/function .* \((.*)\)/', $function_body, $m);
+                $function_params = isset($m[1]) ? trim($m[1]) : '';
+
+                echo "\n > $function_name parsed";
 
                 $function_body = str_replace('{ }', '{}', $function_body); // normalize
+                $function_body = str_replace(' (', '(', $function_body); // we like it with no space
 
-                $stubs[$function_name] = $function_body;
+                $stubs[$function_name] = array(
+                    'params' => $function_params,
+                    'body' => $function_body
+                );
             }
         } catch (Exception $e) {
             echo "\n > ERROR: " . $e->getMessage();
@@ -131,32 +139,15 @@ try {
         }
     }
 
-    // write files
-    // if (!is_dir(__DIR__ . '/dist/')) {
-    //     $ok = mkdir(__DIR__ . '/dist/');
-    //     if (!$ok) {
-    //         throw new Exception('unable to created "dist" dir');
-    //     }
-    // }
-    // if (!is_dir(__DIR__ . '/dist/src/')) {
-    //     $ok = mkdir(__DIR__ . '/dist/src/');
-    //     if (!$ok) {
-    //         throw new Exception('unable to created "src" dir');
-    //     }
-    // }
-    // if (!is_dir(__DIR__ . '/dist/tests/')) {
-    //     $ok = mkdir(__DIR__ . '/dist/tests/');
-    //     if (!$ok) {
-    //         throw new Exception('unable to created "tests" dir');
-    //     }
-    // }
-
-    foreach ($stubs as $function_name => $function_body) {
+    foreach ($stubs as $function_name => $function_data) {
         if (!isset($functions[$function_name])) {
             // throw new Exception($function_name . ' was missing from the function index.');
 
             continue;
         }
+
+        $function_params = $function_data['params'];
+        $function_body = $function_data['body'];
 
         // create stub file
         if (!is_dir(SRC_DIR) || !is_writable(SRC_DIR)) {
@@ -165,14 +156,17 @@ try {
         $base_file_path = SRC_DIR . '/' . $function_name . '.php';
         if (is_file($base_file_path)) {
             // we've already implemented this
+            echo "\n > ☝️  $function_name already implemented";
             continue;
         }
         $file_path = $base_file_path . '.TODO';
-        $function_body = str_replace(' {}', "\n{\n    // TODO: implement\n}", $function_body);
+        $function_body = str_replace(' {}', "\n{\n    return \\$function_name($function_params);\n}", $function_body);
         $file_contents = '';
         $file_contents .= <<<EOF
 <?php
 declare(strict_types=1);
+
+namespace Zubr;
 
 /**
  * \Zubr\\$function_name()
@@ -225,7 +219,7 @@ EOF;
         file_put_contents($file_path, $file_contents);
     }
 
-    echo "\n\n👍🏻  done\n\n";
+    echo "\n\n✅  DONE!\n\n";
 } catch (Exception $e) {
     echo "\n💀\n\n";
 

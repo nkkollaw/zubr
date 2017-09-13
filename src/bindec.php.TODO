@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\bindec()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \bindec() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function bindec ($binary_string)
+function bindec($binary_string)
 {
-    // TODO: implement
+    return \bindec($binary_string);
 }

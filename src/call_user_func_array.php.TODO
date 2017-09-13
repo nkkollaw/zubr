@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\call_user_func_array()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \call_user_func_array() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function call_user_func_array ($function, array $param_arr)
+function call_user_func_array($function, array $param_arr)
 {
-    // TODO: implement
+    return \call_user_func_array($function, array $param_arr);
 }

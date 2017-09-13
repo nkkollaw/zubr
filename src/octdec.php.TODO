@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\octdec()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \octdec() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function octdec ($octal_string)
+function octdec($octal_string)
 {
-    // TODO: implement
+    return \octdec($octal_string);
 }

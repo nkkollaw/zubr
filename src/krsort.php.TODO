@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\krsort()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \krsort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function krsort (array &$array, $sort_flags = null)
+function krsort(array &$array, $sort_flags = null)
 {
-    // TODO: implement
+    return \krsort(array &$array, $sort_flags = null);
 }

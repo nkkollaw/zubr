@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\lcfirst()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \lcfirst() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function lcfirst ($str)
+function lcfirst($str)
 {
-    // TODO: implement
+    return \lcfirst($str);
 }

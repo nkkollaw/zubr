@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\count()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \count() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function count ($var, $mode = COUNT_NORMAL)
+function count($var, $mode = COUNT_NORMAL)
 {
-    // TODO: implement
+    return \count($var, $mode = COUNT_NORMAL);
 }

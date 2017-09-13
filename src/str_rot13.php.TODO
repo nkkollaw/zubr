@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\str_rot13()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function str_rot13($str)
 {
-    // TODO: implement
+    return \str_rot13();
 }

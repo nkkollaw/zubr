@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\htmlspecialchars_decode()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \htmlspecialchars_decode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function htmlspecialchars_decode ($string, $quote_style = null)
+function htmlspecialchars_decode($string, $quote_style = null)
 {
-    // TODO: implement
+    return \htmlspecialchars_decode($string, $quote_style = null);
 }

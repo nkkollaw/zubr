@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\set_time_limit()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \set_time_limit() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function set_time_limit ($seconds)
+function set_time_limit($seconds)
 {
-    // TODO: implement
+    return \set_time_limit($seconds);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\is_infinite()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \is_infinite() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function is_infinite ($val)
+function is_infinite($val)
 {
-    // TODO: implement
+    return \is_infinite($val);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\htmlentities()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \htmlentities() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function htmlentities ($string, $quote_style = null, $charset = null, $double_encode = true)
+function htmlentities($string, $quote_style = null, $charset = null, $double_encode = true)
 {
-    // TODO: implement
+    return \htmlentities($string, $quote_style = null, $charset = null, $double_encode = true);
 }

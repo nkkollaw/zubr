@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\rad2deg()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \rad2deg() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function rad2deg ($number)
+function rad2deg($number)
 {
-    // TODO: implement
+    return \rad2deg($number);
 }

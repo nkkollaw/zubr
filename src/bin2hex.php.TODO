@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\bin2hex()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \bin2hex() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function bin2hex ($str)
+function bin2hex($str)
 {
-    // TODO: implement
+    return \bin2hex($str);
 }

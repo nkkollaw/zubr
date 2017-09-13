@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\similar_text()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \similar_text() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function similar_text ($first, $second, &$percent = null)
+function similar_text($first, $second, &$percent = null)
 {
-    // TODO: implement
+    return \similar_text($first, $second, &$percent = null);
 }

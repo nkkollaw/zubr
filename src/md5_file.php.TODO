@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\md5_file()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \md5_file() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function md5_file ($filename, $raw_output = null)
+function md5_file($filename, $raw_output = null)
 {
-    // TODO: implement
+    return \md5_file($filename, $raw_output = null);
 }

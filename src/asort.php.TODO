@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\asort()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \asort() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function asort (array &$array, $sort_flags = null)
+function asort(array &$array, $sort_flags = null)
 {
-    // TODO: implement
+    return \asort(array &$array, $sort_flags = null);
 }

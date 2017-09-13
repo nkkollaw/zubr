@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_udiff_assoc()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_udiff_assoc(array $array1, array $array2, array $_ = null, $data_compare_func)
 {
-    // TODO: implement
+    return \array_udiff_assoc();
 }

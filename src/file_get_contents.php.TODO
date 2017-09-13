@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\file_get_contents()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \file_get_contents() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function file_get_contents ($filename, $use_include_path = false, $context = null, $offset = 0, $maxlen = null)
+function file_get_contents($filename, $use_include_path = false, $context = null, $offset = 0, $maxlen = null)
 {
-    // TODO: implement
+    return \file_get_contents($filename, $use_include_path = false, $context = null, $offset = 0, $maxlen = null);
 }

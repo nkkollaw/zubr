@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strval()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strval() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strval ($var)
+function strval($var)
 {
-    // TODO: implement
+    return \strval($var);
 }

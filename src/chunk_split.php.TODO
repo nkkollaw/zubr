@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\chunk_split()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \chunk_split() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function chunk_split ($body, $chunklen = null, $end = null)
+function chunk_split($body, $chunklen = null, $end = null)
 {
-    // TODO: implement
+    return \chunk_split($body, $chunklen = null, $end = null);
 }

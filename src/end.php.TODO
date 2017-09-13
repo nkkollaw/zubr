@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\end()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \end() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function end (array &$array)
+function end(array &$array)
 {
-    // TODO: implement
+    return \end(array &$array);
 }

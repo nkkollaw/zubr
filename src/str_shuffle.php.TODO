@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\str_shuffle()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \str_shuffle() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function str_shuffle ($str)
+function str_shuffle($str)
 {
-    // TODO: implement
+    return \str_shuffle($str);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strtr()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strtr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strtr ($str, $from, $to)
+function strtr($str, $from, $to)
 {
-    // TODO: implement
+    return \strtr($str, $from, $to);
 }

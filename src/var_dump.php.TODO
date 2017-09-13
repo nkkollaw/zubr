@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\var_dump()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \var_dump() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function var_dump ($expression, $_ = null)
+function var_dump($expression, $_ = null)
 {
-    // TODO: implement
+    return \var_dump($expression, $_ = null);
 }

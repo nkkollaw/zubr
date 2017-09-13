@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_uintersect_uassoc()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_uintersect_uassoc(array $array1, array $array2, array $_ = null, $data_compare_func, $key_compare_func)
 {
-    // TODO: implement
+    return \array_uintersect_uassoc();
 }

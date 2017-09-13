@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\setcookie()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \setcookie() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function setcookie ($name, $value = "", $expire = 0, $path = "", $domain = "", $secure = false, $httponly = false)
+function setcookie($name, $value = "", $expire = 0, $path = "", $domain = "", $secure = false, $httponly = false)
 {
-    // TODO: implement
+    return \setcookie($name, $value = "", $expire = 0, $path = "", $domain = "", $secure = false, $httponly = false);
 }

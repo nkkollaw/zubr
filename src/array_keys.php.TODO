@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_keys()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_keys(array $input, $search_value = null, $strict = null)
 {
-    // TODO: implement
+    return \array_keys();
 }

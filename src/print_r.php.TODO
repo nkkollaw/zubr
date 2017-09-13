@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\print_r()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \print_r() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function print_r ($expression, $return = null)
+function print_r($expression, $return = null)
 {
-    // TODO: implement
+    return \print_r($expression, $return = null);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\ip2long()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \ip2long() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function ip2long ($ip_address)
+function ip2long($ip_address)
 {
-    // TODO: implement
+    return \ip2long($ip_address);
 }

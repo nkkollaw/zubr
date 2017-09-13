@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strcoll()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strcoll() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strcoll ($str1, $str2)
+function strcoll($str1, $str2)
 {
-    // TODO: implement
+    return \strcoll($str1, $str2);
 }

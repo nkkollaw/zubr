@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\convert_cyr_string()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \convert_cyr_string() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function convert_cyr_string ($str, $from, $to)
+function convert_cyr_string($str, $from, $to)
 {
-    // TODO: implement
+    return \convert_cyr_string($str, $from, $to);
 }

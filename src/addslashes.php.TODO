@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\addslashes()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \addslashes() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function addslashes ($str)
+function addslashes($str)
 {
-    // TODO: implement
+    return \addslashes($str);
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\stripos()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \stripos() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function stripos ($haystack, $needle, $offset = null)
+function stripos($haystack, $needle, $offset = null)
 {
-    // TODO: implement
+    return \stripos($haystack, $needle, $offset = null);
 }

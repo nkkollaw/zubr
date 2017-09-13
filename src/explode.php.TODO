@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\explode()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \explode() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function explode ($delimiter, $string, $limit = null)
+function explode($delimiter, $string, $limit = null)
 {
-    // TODO: implement
+    return \explode($delimiter, $string, $limit = null);
 }

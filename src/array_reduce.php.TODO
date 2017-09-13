@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_reduce()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_reduce(array $input, $function, $initial = null)
 {
-    // TODO: implement
+    return \array_reduce();
 }

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\pack()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \pack() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function pack ($format, $args = null, $_ = null)
+function pack($format, $args = null, $_ = null)
 {
-    // TODO: implement
+    return \pack($format, $args = null, $_ = null);
 }

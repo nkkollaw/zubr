@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_values()
  *
@@ -10,5 +12,5 @@ declare(strict_types=1);
 */
 function array_values(array $input)
 {
-    // TODO: implement
+    return \array_values();
 }

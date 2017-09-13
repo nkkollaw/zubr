@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\array_slice()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \array_slice() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function array_slice (array $array, $offset, $length = null, $preserve_keys = false)
+function array_slice(array $array, $offset, $length = null, $preserve_keys = false)
 {
-    // TODO: implement
+    return \array_slice(array $array, $offset, $length = null, $preserve_keys = false);
 }

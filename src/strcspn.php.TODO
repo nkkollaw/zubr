@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strcspn()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strcspn() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strcspn ($str1, $str2, $start = null, $length = null)
+function strcspn($str1, $str2, $start = null, $length = null)
 {
-    // TODO: implement
+    return \strcspn($str1, $str2, $start = null, $length = null);
 }

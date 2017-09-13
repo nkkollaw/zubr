@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Zubr;
+
 /**
  * \Zubr\strstr()
  *
@@ -8,7 +10,7 @@ declare(strict_types=1);
  *
  * NOTES: same as \strstr() || in Zubr, $param_1 goes before $param_2, and we return an array instead of void
 */
-function strstr ($haystack, $needle, $before_needle = null)
+function strstr($haystack, $needle, $before_needle = null)
 {
-    // TODO: implement
+    return \strstr($haystack, $needle, $before_needle = null);
 }
