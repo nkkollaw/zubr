@@ -22,6 +22,26 @@ function array_count_values($input)
 {
     return \array_count_values($input);
 }
+function array_fill($start_index, $num, $value)
+{
+    return \array_fill($start_index, $num, $value);
+}
+function array_fill_keys($keys, $value)
+{
+    return \array_fill_keys($keys, $value);
+}
+function array_flip($array)
+{
+    return \array_flip($array);
+}
+function array_key_exists($array, $key)
+{
+    return \array_key_exists($key, $array);
+}
+function array_keys(array $input, $search_value = null, $strict = false)
+{
+    return \array_keys($input, $search_value, $strict);
+}
 function class_exists(string $className, bool $autoload = true): bool
 {
     return \class_exists($className, $autoload);
