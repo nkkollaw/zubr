@@ -10,7 +10,7 @@ namespace Zubr;
  *
  * NOTES: same as \array_change_key_case()
 */
-function array_change_key_case(array $input, $case = null)
+function array_change_key_case(array $input, $case = CASE_LOWER)
 {
     return \array_change_key_case($input, $case);
 }
