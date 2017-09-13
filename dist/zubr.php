@@ -18,6 +18,10 @@ function array_combine(array $keys, array $values)
 {
     return \array_combine($keys, $values);
 }
+function array_count_values($input)
+{
+    return \array_count_values($input);
+}
 function class_exists(string $className, bool $autoload = true): bool
 {
     return \class_exists($className, $autoload);
