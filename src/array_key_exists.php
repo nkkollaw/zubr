@@ -8,9 +8,9 @@ namespace Zubr;
  *
  * @link https://secure.php.net/array_key_exists
  *
- * NOTES: same as \array_key_exists()
+ * NOTES: in Zubr, the $array parameter comes before $key
 */
-function array_key_exists($key, $search)
+function array_key_exists($array, $key)
 {
-    return \array_key_exists($key, $search);
+    return \array_key_exists($key, $array);
 }
