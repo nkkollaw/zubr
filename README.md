@@ -1,7 +1,5 @@
 # Zubr
 
-![](http://i.imgur.com/oWdNDv2.png)
-
 ## Wrapper library to fix inconsistencies in PHP's core functions
 
 PHP is great and Composer, PHP-FIG, and all the different frameworks make it even greater. However, there is still legacy stuff in the language itself that makes PHP harder to use than it should be (see http://phpsadness.com/ for one of many lists).
