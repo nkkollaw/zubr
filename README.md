@@ -1,3 +1,5 @@
+![](http://i.imgur.com/oWdNDv2.png)
+
 # Zubr
 
 ## Wrapper library to fix inconsistencies in PHP's core functions
